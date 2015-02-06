@@ -13,9 +13,13 @@ void kernel()
     isrs_install();
     irq_install();
     init_video();
-   // paging_install();
     timer_install();
     keyboard_install();
+    paging_init();
+    
+    // And this inside a function
+    loadPageDirectory(page_directory);
+    enablePaging();
     
     __asm__ __volatile__ ("sti");
     

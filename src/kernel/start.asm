@@ -516,6 +516,8 @@ irq_common_stub:
     add esp, 8
     iret
 
+
+    
 ; Here is the definition of our BSS section. Right now, we'll use
 ; it just to store the stack. Remember that a stack actually grows
 ; downwards, so we declare the size of the data before declaring

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		B35766111A854D00006CE4E8 /* paging.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = paging.c; sourceTree = "<group>"; };
+		B357661E1A854D4A006CE4E8 /* mem.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = mem.s; sourceTree = "<group>"; };
 		B36A8E2C1A841D3900C2FA2F /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
 		B36A8E2D1A841D4300C2FA2F /* keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyboard.h; sourceTree = "<group>"; };
 		B36A8E2F1A841D5400C2FA2F /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
@@ -33,7 +35,6 @@
 		B36A903A1A84464200C2FA2F /* memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory.h; sourceTree = "<group>"; };
 		B36A91581A844DE700C2FA2F /* kheap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kheap.c; sourceTree = "<group>"; };
 		B36A915B1A844E0D00C2FA2F /* kheap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kheap.h; sourceTree = "<group>"; };
-		B36A91761A844E3E00C2FA2F /* paging.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = paging.c; sourceTree = "<group>"; };
 		B36A919F1A844FA400C2FA2F /* paging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paging.h; sourceTree = "<group>"; };
 		B372FBC91A841C6000AA4A49 /* kernel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernel.c; sourceTree = "<group>"; };
 		B372FBCB1A841CA700AA4A49 /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = io.c; sourceTree = "<group>"; };
@@ -85,9 +86,10 @@
 		B36A90381A84461200C2FA2F /* memory */ = {
 			isa = PBXGroup;
 			children = (
+				B357661E1A854D4A006CE4E8 /* mem.s */,
+				B35766111A854D00006CE4E8 /* paging.c */,
 				B36A90391A84463100C2FA2F /* memory.c */,
 				B36A91581A844DE700C2FA2F /* kheap.c */,
-				B36A91761A844E3E00C2FA2F /* paging.c */,
 			);
 			path = memory;
 			sourceTree = "<group>";
