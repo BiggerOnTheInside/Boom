@@ -5,7 +5,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 7";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 240;
 		vrLoc = 0;
@@ -15,7 +15,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 3";
 		rLen = 0;
-		rLoc = 375;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 240;
 		vrLoc = 0;
@@ -50,7 +50,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 7";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 240;
 		vrLoc = 0;
@@ -70,7 +70,7 @@
 		fRef = B36A91761A844E3E00C2FA2F /* paging.c */;
 		name = "paging.c: 4";
 		rLen = 0;
-		rLoc = 248;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1093;
 		vrLoc = 0;
@@ -150,7 +150,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 3";
 		rLen = 0;
-		rLoc = 375;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 240;
 		vrLoc = 0;
@@ -180,7 +180,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 5";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 198;
 		vrLoc = 0;
@@ -190,7 +190,7 @@
 		fRef = B36A91761A844E3E00C2FA2F /* paging.c */;
 		name = "paging.c: 4";
 		rLen = 0;
-		rLoc = 248;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1093;
 		vrLoc = 0;
@@ -200,7 +200,7 @@
 		fRef = B36A91761A844E3E00C2FA2F /* paging.c */;
 		name = "paging.c: 2";
 		rLen = 0;
-		rLoc = 248;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 977;
 		vrLoc = 0;
@@ -240,7 +240,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 3";
 		rLen = 0;
-		rLoc = 375;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 198;
 		vrLoc = 0;
@@ -250,7 +250,7 @@
 		fRef = B36A91761A844E3E00C2FA2F /* paging.c */;
 		name = "paging.c: 2";
 		rLen = 0;
-		rLoc = 248;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 977;
 		vrLoc = 0;
@@ -310,16 +310,16 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 3";
 		rLen = 0;
-		rLoc = 375;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 198;
 		vrLoc = 0;
 	};
 	B35766111A854D00006CE4E8 /* paging.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1221, 3601}}";
-			sepNavSelRange = "{6700, 1}";
-			sepNavVisRange = "{6283, 1348}";
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 2587}}";
+			sepNavSelRange = "{779, 0}";
+			sepNavVisRange = "{0, 1684}";
 			sepNavWindowFrame = "{{0, 92}, {1280, 686}}";
 		};
 	};
@@ -328,7 +328,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 6";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 225;
 		vrLoc = 0;
@@ -348,7 +348,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 3";
 		rLen = 0;
-		rLoc = 251;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 0;
@@ -388,7 +388,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 3";
 		rLen = 0;
-		rLoc = 375;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 198;
 		vrLoc = 0;
@@ -398,7 +398,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 6";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 225;
 		vrLoc = 0;
@@ -455,7 +455,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 3";
 		rLen = 0;
-		rLoc = 251;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 0;
@@ -465,7 +465,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 7";
 		rLen = 0;
-		rLoc = 346;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 0;
@@ -475,7 +475,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 6";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 225;
 		vrLoc = 0;
@@ -515,7 +515,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 13";
 		rLen = 0;
-		rLoc = 634;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1033;
 		vrLoc = 0;
@@ -525,7 +525,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 6";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 225;
 		vrLoc = 0;
@@ -565,7 +565,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 13";
 		rLen = 0;
-		rLoc = 634;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 0;
@@ -575,7 +575,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 6";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 225;
 		vrLoc = 0;
@@ -925,7 +925,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 11";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 0;
@@ -975,7 +975,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 11";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 0;
@@ -1035,7 +1035,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 33";
 		rLen = 0;
-		rLoc = 678;
+		rLoc = 637;
 		rType = 0;
 		vrLen = 510;
 		vrLoc = 277;
@@ -1045,7 +1045,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 11";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 0;
@@ -1085,7 +1085,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 33";
 		rLen = 0;
-		rLoc = 678;
+		rLoc = 637;
 		rType = 0;
 		vrLen = 510;
 		vrLoc = 277;
@@ -1135,7 +1135,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 11";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 0;
@@ -1185,7 +1185,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 11";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 0;
@@ -1235,7 +1235,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 11";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 0;
@@ -1336,7 +1336,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 63";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1740;
 		vrLoc = 645;
@@ -1366,7 +1366,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 11";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 0;
@@ -1396,7 +1396,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 19";
 		rLen = 0;
-		rLoc = 651;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1577;
 		vrLoc = 76;
@@ -1416,7 +1416,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 11";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 0;
@@ -1496,7 +1496,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 19";
 		rLen = 0;
-		rLoc = 687;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1613;
 		vrLoc = 76;
@@ -1516,7 +1516,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 11";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 0;
@@ -1556,7 +1556,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 12";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 0;
@@ -1565,8 +1565,8 @@
 		isa = PBXTextBookmark;
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
-		rLen = 24;
-		rLoc = 1469;
+		rLen = 0;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1826;
 		vrLoc = 351;
@@ -1586,7 +1586,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 12";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 0;
@@ -1606,7 +1606,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 12";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 0;
@@ -1636,7 +1636,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1125;
 		vrLoc = 747;
@@ -1646,7 +1646,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1826;
 		vrLoc = 351;
@@ -1666,7 +1666,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 12";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 0;
@@ -1706,7 +1706,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1061;
 		vrLoc = 0;
@@ -1716,7 +1716,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 51";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 1310;
@@ -1726,7 +1726,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 351;
@@ -1746,7 +1746,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 12";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 0;
@@ -1766,7 +1766,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 66";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 1310;
@@ -1816,7 +1816,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 351;
@@ -1836,7 +1836,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 12";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 0;
@@ -1866,7 +1866,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 351;
@@ -1886,7 +1886,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 12";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 0;
@@ -1916,7 +1916,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 33";
 		rLen = 0;
-		rLoc = 678;
+		rLoc = 637;
 		rType = 0;
 		vrLen = 493;
 		vrLoc = 277;
@@ -1926,7 +1926,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 34";
 		rLen = 0;
-		rLoc = 710;
+		rLoc = 637;
 		rType = 0;
 		vrLen = 497;
 		vrLoc = 301;
@@ -1936,7 +1936,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 351;
@@ -1956,7 +1956,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 12";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 0;
@@ -1976,7 +1976,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 41";
 		rLen = 0;
-		rLoc = 773;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 500;
 		vrLoc = 377;
@@ -1986,7 +1986,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 351;
@@ -2006,7 +2006,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 12";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 0;
@@ -2026,7 +2026,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 39";
 		rLen = 0;
-		rLoc = 762;
+		rLoc = 727;
 		rType = 0;
 		vrLen = 438;
 		vrLoc = 441;
@@ -2036,7 +2036,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 351;
@@ -2056,7 +2056,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 12";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 0;
@@ -2076,7 +2076,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 36";
 		rLen = 0;
-		rLoc = 731;
+		rLoc = 637;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 398;
@@ -2096,7 +2096,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 117";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 878;
 		vrLoc = 3906;
@@ -2106,7 +2106,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 351;
@@ -2126,7 +2126,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 12";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 0;
@@ -2146,7 +2146,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 116";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 3922;
@@ -2156,7 +2156,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 12";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 514;
 		vrLoc = 0;
@@ -2166,7 +2166,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 444;
 		vrLoc = 1724;
@@ -2176,7 +2176,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 351;
@@ -2206,7 +2206,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 175";
 		rLen = 0;
-		rLoc = 8515;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 724;
 		vrLoc = 4852;
@@ -2216,7 +2216,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 444;
 		vrLoc = 1724;
@@ -2226,7 +2226,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 351;
@@ -2256,7 +2256,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 213";
 		rLen = 0;
-		rLoc = 8515;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 911;
 		vrLoc = 5792;
@@ -2266,7 +2266,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 444;
 		vrLoc = 1724;
@@ -2276,7 +2276,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 351;
@@ -2306,7 +2306,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 283";
 		rLen = 0;
-		rLoc = 8515;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 8207;
@@ -2316,7 +2316,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 444;
 		vrLoc = 1724;
@@ -2326,7 +2326,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 351;
@@ -2356,7 +2356,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 308";
 		rLen = 0;
-		rLoc = 8515;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 1059;
 		vrLoc = 9043;
@@ -2366,7 +2366,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 444;
 		vrLoc = 1724;
@@ -2376,7 +2376,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 43";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 351;
@@ -2406,7 +2406,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 296";
 		rLen = 6;
-		rLoc = 8202;
+		rLoc = 6033;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 6778;
@@ -2416,7 +2416,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 444;
 		vrLoc = 1724;
@@ -2426,7 +2426,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 296";
 		rLen = 0;
-		rLoc = 8145;
+		rLoc = 5976;
 		rType = 0;
 		vrLen = 1821;
 		vrLoc = 351;
@@ -2456,7 +2456,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 296";
 		rLen = 6;
-		rLoc = 8202;
+		rLoc = 6033;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 6778;
@@ -2486,7 +2486,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 444;
 		vrLoc = 1724;
@@ -2496,7 +2496,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 296";
 		rLen = 0;
-		rLoc = 8145;
+		rLoc = 5976;
 		rType = 0;
 		vrLen = 1821;
 		vrLoc = 351;
@@ -2516,7 +2516,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 296";
 		rLen = 6;
-		rLoc = 8202;
+		rLoc = 6033;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 6778;
@@ -2526,7 +2526,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2536,7 +2536,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 444;
 		vrLoc = 1724;
@@ -2546,7 +2546,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 296";
 		rLen = 0;
-		rLoc = 8145;
+		rLoc = 5976;
 		rType = 0;
 		vrLen = 1821;
 		vrLoc = 351;
@@ -2566,7 +2566,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 296";
 		rLen = 6;
-		rLoc = 8202;
+		rLoc = 6033;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 6778;
@@ -2586,7 +2586,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2168;
+		rLoc = 1897;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 1410;
@@ -2596,7 +2596,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2606,7 +2606,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1724;
@@ -2616,7 +2616,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 296";
 		rLen = 0;
-		rLoc = 8145;
+		rLoc = 5976;
 		rType = 0;
 		vrLen = 1821;
 		vrLoc = 351;
@@ -2636,7 +2636,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 13";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 0;
@@ -2646,7 +2646,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 296";
 		rLen = 0;
-		rLoc = 8145;
+		rLoc = 5976;
 		rType = 0;
 		vrLen = 1821;
 		vrLoc = 351;
@@ -2656,7 +2656,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 68";
 		rLen = 0;
-		rLoc = 2418;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 1631;
 		vrLoc = 1033;
@@ -2666,7 +2666,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2676,7 +2676,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -2696,7 +2696,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 13";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 0;
@@ -2706,7 +2706,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 75";
 		rLen = 0;
-		rLoc = 2801;
+		rLoc = 631;
 		rType = 0;
 		vrLen = 1587;
 		vrLoc = 1069;
@@ -2716,7 +2716,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2726,7 +2726,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -2746,7 +2746,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 13";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 0;
@@ -2756,7 +2756,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 72";
 		rLen = 0;
-		rLoc = 2418;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 1611;
 		vrLoc = 8406;
@@ -2766,7 +2766,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2776,7 +2776,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -2796,7 +2796,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 13";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 0;
@@ -2806,7 +2806,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 91";
 		rLen = 0;
-		rLoc = 2921;
+		rLoc = 751;
 		rType = 0;
 		vrLen = 1445;
 		vrLoc = 2339;
@@ -2816,7 +2816,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2826,7 +2826,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -2846,7 +2846,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 13";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 0;
@@ -2856,7 +2856,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 220";
 		rLen = 0;
-		rLoc = 6540;
+		rLoc = 4371;
 		rType = 0;
 		vrLen = 1507;
 		vrLoc = 6834;
@@ -2866,7 +2866,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2876,7 +2876,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -2896,7 +2896,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 13";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 0;
@@ -2906,7 +2906,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 122";
 		rLen = 0;
-		rLoc = 4135;
+		rLoc = 1966;
 		rType = 0;
 		vrLen = 1340;
 		vrLoc = 3784;
@@ -2916,7 +2916,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2926,7 +2926,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -2946,7 +2946,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 13";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 0;
@@ -2956,7 +2956,7 @@
 		fRef = B35766111A854D00006CE4E8 /* paging.c */;
 		name = "paging.c: 117";
 		rLen = 0;
-		rLoc = 4038;
+		rLoc = 1869;
 		rType = 0;
 		vrLen = 1598;
 		vrLoc = 3047;
@@ -2966,7 +2966,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2976,7 +2976,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -2996,7 +2996,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 13";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 0;
@@ -3016,7 +3016,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -3036,7 +3036,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -3076,7 +3076,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -3106,7 +3106,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 859;
 		vrLoc = 0;
@@ -3116,7 +3116,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -3146,7 +3146,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 859;
 		vrLoc = 0;
@@ -3156,7 +3156,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -3186,7 +3186,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 853;
 		vrLoc = 0;
@@ -3196,7 +3196,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -3226,7 +3226,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 853;
 		vrLoc = 0;
@@ -3246,7 +3246,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -3286,7 +3286,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -3316,7 +3316,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 786;
 		vrLoc = 0;
@@ -3326,7 +3326,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -3356,7 +3356,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 773;
+		rLoc = 729;
 		rType = 0;
 		vrLen = 790;
 		vrLoc = 0;
@@ -3366,7 +3366,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -3420,7 +3420,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 71";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 1728;
@@ -3434,6 +3434,380 @@
 		rType = 0;
 		vrLen = 648;
 		vrLoc = 8045;
+	};
+	B357675D1A8557D0006CE4E8 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = B35766111A854D00006CE4E8 /* paging.c */;
+	};
+	B357675E1A8557EF006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A8E3A1A841DFE00C2FA2F /* isrs.c */;
+		name = "isrs.c: 3";
+		rLen = 0;
+		rLoc = 229;
+		rType = 0;
+		vrLen = 903;
+		vrLoc = 0;
+	};
+	B357675F1A8557EF006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 13";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 1142;
+		vrLoc = 0;
+	};
+	B35767601A8557EF006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 1093;
+		vrLoc = 0;
+	};
+	B35767631A8557EF006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B35766111A854D00006CE4E8 /* paging.c */;
+		name = "paging.c: 4";
+		rLen = 0;
+		rLoc = 247;
+		rType = 0;
+		vrLen = 1683;
+		vrLoc = 0;
+	};
+	B35767641A8557EF006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 21";
+		rLen = 0;
+		rLoc = 513;
+		rType = 0;
+		vrLen = 790;
+		vrLoc = 0;
+	};
+	B35767651A8557EF006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A8E431A841E5600C2FA2F /* start.asm */;
+		name = "start.asm: 512";
+		rLen = 0;
+		rLoc = 8618;
+		rType = 0;
+		vrLen = 648;
+		vrLoc = 8045;
+	};
+	B35767661A8557EF006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 71";
+		rLen = 0;
+		rLoc = 1899;
+		rType = 0;
+		vrLen = 442;
+		vrLoc = 1728;
+	};
+	B35767671A8557EF006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 0;
+	};
+	B35767681A855850006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 1093;
+		vrLoc = 0;
+	};
+	B35767691A855850006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B35766111A854D00006CE4E8 /* paging.c */;
+		name = "paging.c: 27";
+		rLen = 0;
+		rLoc = 779;
+		rType = 0;
+		vrLen = 1684;
+		vrLoc = 0;
+	};
+	B357676A1A855850006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 21";
+		rLen = 0;
+		rLoc = 513;
+		rType = 0;
+		vrLen = 790;
+		vrLoc = 0;
+	};
+	B357676B1A855850006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A8E431A841E5600C2FA2F /* start.asm */;
+		name = "start.asm: 512";
+		rLen = 0;
+		rLoc = 8618;
+		rType = 0;
+		vrLen = 648;
+		vrLoc = 8045;
+	};
+	B357676C1A855850006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 0;
+	};
+	B357676E1A855862006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 1093;
+		vrLoc = 0;
+	};
+	B357676F1A855862006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 21";
+		rLen = 0;
+		rLoc = 513;
+		rType = 0;
+		vrLen = 790;
+		vrLoc = 0;
+	};
+	B35767701A855862006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 29";
+		rLen = 0;
+		rLoc = 637;
+		rType = 0;
+		vrLen = 788;
+		vrLoc = 0;
+	};
+	B35767711A855862006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A8E431A841E5600C2FA2F /* start.asm */;
+		name = "start.asm: 512";
+		rLen = 0;
+		rLoc = 8618;
+		rType = 0;
+		vrLen = 648;
+		vrLoc = 8045;
+	};
+	B35767721A855862006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 0;
+	};
+	B35767731A855871006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 1093;
+		vrLoc = 0;
+	};
+	B35767741A855871006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 38";
+		rLen = 0;
+		rLoc = 729;
+		rType = 0;
+		vrLen = 779;
+		vrLoc = 0;
+	};
+	B35767751A855871006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A8E431A841E5600C2FA2F /* start.asm */;
+		name = "start.asm: 512";
+		rLen = 0;
+		rLoc = 8618;
+		rType = 0;
+		vrLen = 648;
+		vrLoc = 8045;
+	};
+	B35767761A855871006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 0;
+	};
+	B35767771A85587E006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 1093;
+		vrLoc = 0;
+	};
+	B35767781A85587E006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 31";
+		rLen = 0;
+		rLoc = 637;
+		rType = 0;
+		vrLen = 754;
+		vrLoc = 0;
+	};
+	B35767791A85587E006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A8E431A841E5600C2FA2F /* start.asm */;
+		name = "start.asm: 512";
+		rLen = 0;
+		rLoc = 8618;
+		rType = 0;
+		vrLen = 648;
+		vrLoc = 8045;
+	};
+	B357677A1A85587E006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 0;
+	};
+	B357677C1A8558CE006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 1093;
+		vrLoc = 0;
+	};
+	B357677D1A8558CE006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A91581A844DE700C2FA2F /* kheap.c */;
+		name = "kheap.c: 29";
+		rLen = 0;
+		rLoc = 994;
+		rType = 0;
+		vrLen = 433;
+		vrLoc = 873;
+	};
+	B357677E1A8558CE006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 29";
+		rLen = 0;
+		rLoc = 637;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 264;
+	};
+	B357677F1A8558CE006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 31";
+		rLen = 0;
+		rLoc = 722;
+		rType = 0;
+		vrLen = 703;
+		vrLoc = 0;
+	};
+	B35767801A8558CE006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 32";
+		rLen = 0;
+		rLoc = 697;
+		rType = 0;
+		vrLen = 746;
+		vrLoc = 0;
+	};
+	B35767811A8558CE006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A8E431A841E5600C2FA2F /* start.asm */;
+		name = "start.asm: 512";
+		rLen = 0;
+		rLoc = 8618;
+		rType = 0;
+		vrLen = 648;
+		vrLoc = 8045;
+	};
+	B35767821A8558CE006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 0;
+	};
+	B35767831A8558D8006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 29";
+		rLen = 0;
+		rLoc = 637;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 264;
+	};
+	B35767841A8558D8006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 30";
+		rLen = 0;
+		rLoc = 673;
+		rType = 0;
+		vrLen = 746;
+		vrLoc = 0;
+	};
+	B35767851A8558D8006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A8E431A841E5600C2FA2F /* start.asm */;
+		name = "start.asm: 512";
+		rLen = 0;
+		rLoc = 8618;
+		rType = 0;
+		vrLen = 648;
+		vrLoc = 8045;
+	};
+	B35767861A8558D8006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 0;
 	};
 	B36A8E2C1A841D3900C2FA2F /* system.h */ = {
 		uiCtxt = {
@@ -3837,9 +4211,9 @@
 	};
 	B36A91581A844DE700C2FA2F /* kheap.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 624}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 676}}";
 			sepNavSelRange = "{994, 0}";
-			sepNavVisRange = "{249, 827}";
+			sepNavVisRange = "{873, 433}";
 			sepNavWindowFrame = "{{15, 61}, {1265, 712}}";
 		};
 	};
@@ -4076,9 +4450,9 @@
 	};
 	B36A919F1A844FA400C2FA2F /* paging.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1221, 962}}";
-			sepNavSelRange = "{2170, 0}";
-			sepNavVisRange = "{1728, 442}";
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 689}}";
+			sepNavSelRange = "{248, 0}";
+			sepNavVisRange = "{0, 824}";
 			sepNavWindowFrame = "{{0, 459}, {1280, 314}}";
 		};
 	};
@@ -4248,7 +4622,7 @@
 		fRef = B36A91761A844E3E00C2FA2F /* paging.c */;
 		name = "paging.c: 29";
 		rLen = 0;
-		rLoc = 8516;
+		rLoc = 6347;
 		rType = 0;
 		vrLen = 700;
 		vrLoc = 0;
@@ -4268,7 +4642,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 4";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 115;
 		vrLoc = 0;
@@ -4278,7 +4652,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 7";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 240;
 		vrLoc = 0;
@@ -4288,7 +4662,7 @@
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 3";
 		rLen = 0;
-		rLoc = 375;
+		rLoc = 248;
 		rType = 0;
 		vrLen = 240;
 		vrLoc = 0;
@@ -4775,6 +5149,44 @@
 			B35767581A8557BB006CE4E8 /* PBXTextBookmark */ = B35767581A8557BB006CE4E8 /* PBXTextBookmark */;
 			B35767591A8557BB006CE4E8 /* PBXTextBookmark */ = B35767591A8557BB006CE4E8 /* PBXTextBookmark */;
 			B357675A1A8557BB006CE4E8 /* PBXTextBookmark */ = B357675A1A8557BB006CE4E8 /* PBXTextBookmark */;
+			B357675D1A8557D0006CE4E8 /* PBXBookmark */ = B357675D1A8557D0006CE4E8 /* PBXBookmark */;
+			B357675E1A8557EF006CE4E8 /* PBXTextBookmark */ = B357675E1A8557EF006CE4E8 /* PBXTextBookmark */;
+			B357675F1A8557EF006CE4E8 /* PBXTextBookmark */ = B357675F1A8557EF006CE4E8 /* PBXTextBookmark */;
+			B35767601A8557EF006CE4E8 /* PBXTextBookmark */ = B35767601A8557EF006CE4E8 /* PBXTextBookmark */;
+			B35767631A8557EF006CE4E8 /* PBXTextBookmark */ = B35767631A8557EF006CE4E8 /* PBXTextBookmark */;
+			B35767641A8557EF006CE4E8 /* PBXTextBookmark */ = B35767641A8557EF006CE4E8 /* PBXTextBookmark */;
+			B35767651A8557EF006CE4E8 /* PBXTextBookmark */ = B35767651A8557EF006CE4E8 /* PBXTextBookmark */;
+			B35767661A8557EF006CE4E8 /* PBXTextBookmark */ = B35767661A8557EF006CE4E8 /* PBXTextBookmark */;
+			B35767671A8557EF006CE4E8 /* PBXTextBookmark */ = B35767671A8557EF006CE4E8 /* PBXTextBookmark */;
+			B35767681A855850006CE4E8 /* PBXTextBookmark */ = B35767681A855850006CE4E8 /* PBXTextBookmark */;
+			B35767691A855850006CE4E8 /* PBXTextBookmark */ = B35767691A855850006CE4E8 /* PBXTextBookmark */;
+			B357676A1A855850006CE4E8 /* PBXTextBookmark */ = B357676A1A855850006CE4E8 /* PBXTextBookmark */;
+			B357676B1A855850006CE4E8 /* PBXTextBookmark */ = B357676B1A855850006CE4E8 /* PBXTextBookmark */;
+			B357676C1A855850006CE4E8 /* PBXTextBookmark */ = B357676C1A855850006CE4E8 /* PBXTextBookmark */;
+			B357676E1A855862006CE4E8 /* PBXTextBookmark */ = B357676E1A855862006CE4E8 /* PBXTextBookmark */;
+			B357676F1A855862006CE4E8 /* PBXTextBookmark */ = B357676F1A855862006CE4E8 /* PBXTextBookmark */;
+			B35767701A855862006CE4E8 /* PBXTextBookmark */ = B35767701A855862006CE4E8 /* PBXTextBookmark */;
+			B35767711A855862006CE4E8 /* PBXTextBookmark */ = B35767711A855862006CE4E8 /* PBXTextBookmark */;
+			B35767721A855862006CE4E8 /* PBXTextBookmark */ = B35767721A855862006CE4E8 /* PBXTextBookmark */;
+			B35767731A855871006CE4E8 /* PBXTextBookmark */ = B35767731A855871006CE4E8 /* PBXTextBookmark */;
+			B35767741A855871006CE4E8 /* PBXTextBookmark */ = B35767741A855871006CE4E8 /* PBXTextBookmark */;
+			B35767751A855871006CE4E8 /* PBXTextBookmark */ = B35767751A855871006CE4E8 /* PBXTextBookmark */;
+			B35767761A855871006CE4E8 /* PBXTextBookmark */ = B35767761A855871006CE4E8 /* PBXTextBookmark */;
+			B35767771A85587E006CE4E8 /* PBXTextBookmark */ = B35767771A85587E006CE4E8 /* PBXTextBookmark */;
+			B35767781A85587E006CE4E8 /* PBXTextBookmark */ = B35767781A85587E006CE4E8 /* PBXTextBookmark */;
+			B35767791A85587E006CE4E8 /* PBXTextBookmark */ = B35767791A85587E006CE4E8 /* PBXTextBookmark */;
+			B357677A1A85587E006CE4E8 /* PBXTextBookmark */ = B357677A1A85587E006CE4E8 /* PBXTextBookmark */;
+			B357677C1A8558CE006CE4E8 /* PBXTextBookmark */ = B357677C1A8558CE006CE4E8 /* PBXTextBookmark */;
+			B357677D1A8558CE006CE4E8 /* PBXTextBookmark */ = B357677D1A8558CE006CE4E8 /* PBXTextBookmark */;
+			B357677E1A8558CE006CE4E8 /* PBXTextBookmark */ = B357677E1A8558CE006CE4E8 /* PBXTextBookmark */;
+			B357677F1A8558CE006CE4E8 /* PBXTextBookmark */ = B357677F1A8558CE006CE4E8 /* PBXTextBookmark */;
+			B35767801A8558CE006CE4E8 /* PBXTextBookmark */ = B35767801A8558CE006CE4E8 /* PBXTextBookmark */;
+			B35767811A8558CE006CE4E8 /* PBXTextBookmark */ = B35767811A8558CE006CE4E8 /* PBXTextBookmark */;
+			B35767821A8558CE006CE4E8 /* PBXTextBookmark */ = B35767821A8558CE006CE4E8 /* PBXTextBookmark */;
+			B35767831A8558D8006CE4E8 /* PBXTextBookmark */ = B35767831A8558D8006CE4E8 /* PBXTextBookmark */;
+			B35767841A8558D8006CE4E8 /* PBXTextBookmark */ = B35767841A8558D8006CE4E8 /* PBXTextBookmark */;
+			B35767851A8558D8006CE4E8 /* PBXTextBookmark */ = B35767851A8558D8006CE4E8 /* PBXTextBookmark */;
+			B35767861A8558D8006CE4E8 /* PBXTextBookmark */ = B35767861A8558D8006CE4E8 /* PBXTextBookmark */;
 			B36A8E481A84205100C2FA2F = B36A8E481A84205100C2FA2F /* PBXTextBookmark */;
 			B36A8E4A1A84205100C2FA2F = B36A8E4A1A84205100C2FA2F /* PBXTextBookmark */;
 			B36A8E4C1A84205100C2FA2F = B36A8E4C1A84205100C2FA2F /* PBXTextBookmark */;
@@ -4848,8 +5260,8 @@
 	B372FBC91A841C6000AA4A49 /* kernel.c */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1206, 614}}";
-			sepNavSelRange = "{513, 0}";
-			sepNavVisRange = "{0, 790}";
+			sepNavSelRange = "{673, 0}";
+			sepNavVisRange = "{0, 746}";
 			sepNavWindowFrame = "{{15, 72}, {1265, 706}}";
 		};
 	};

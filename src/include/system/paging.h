@@ -3,14 +3,6 @@
 /*************************************************************************/
 #include <system.h>
 
-/*u32int page_directory[1024] __attribute__((alligned(4096)));
-u32int first_page_table[1024] __attribute__((alligned(4096)));
-
-extern void loadPageDirectory(unsigned int*);
-extern void enablePaging();
-extern void paging_init();
-extern void page_fault(struct regs* r);
-*/
 typedef struct page
 {
     u32int present    : 1;   // Page present in memory

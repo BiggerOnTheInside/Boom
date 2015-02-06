@@ -3,70 +3,6 @@
 /*************************************************************************/
 #include <system.h>
 
-/*void paging_init(){
-    //set each entry to not present
-    int i;
-    
-    for(i = 0; i < 1024; i++)
-    {
-        // This sets the following flags to the pages:
-        //   Supervisor: Only kernel-mode can access them
-        //   Write Enabled: It can be both read from and written to
-        //   Not Present: The page table is not present
-        page_directory[i] = 0x00000002;
-    }
-    
-    irq_install_handler(14, page_fault);
-    paging_fill_table();
-    insert_page_into_directory();
-}
-
-void paging_fill_table(){
-    // holds the physical address where we want to start mapping these pages to.
-    // in this case, we want to map these pages to the very beginning of memory.
-    unsigned int i;
-    
-    //we will fill all 1024 entries in the table, mapping 4 megabytes
-    for(i = 0; i < 1024; i++)
-    {
-        // As the address is page aligned, it will always leave 12 bits zeroed.
-        // Those bits are used by the attributes ;)
-        first_page_table[i] = (i * 0x1000) | 3; // attributes: supervisor level, read/write, present.
-    }
-}
-
-void insert_page_into_directory(){
-    // attributes: supervisor level, read/write, present
-    page_directory[0] = ((unsigned int)first_page_table) | 3;
-}
-
-void page_fault(struct r *r)
-{
-    // A page fault has occurred.
-    // The faulting address is stored in the CR2 register.
-    u32int faulting_address;
-    asm volatile("mov %%cr2, %0" : "=r" (faulting_address));
-    
-    // The error code gives us details of what happened.
-    int present   = !(r->err_code & 0x1); // Page not present
-    int rw = r->err_code & 0x2;           // Write operation?
-    int us = r->err_code & 0x4;           // Processor was in user-mode?
-    int reserved = r->err_code & 0x8;     // Overwritten CPU-reserved bits of page entry?
-    int id = r->err_code & 0x10;          // Caused by an instruction fetch?
-    
-    // Output an error message.
-    puts("Page fault! ( ");
-    if (present) {puts("present ");}
-    if (rw) {puts("read-only ");}
-    if (us) {puts("user-mode ");}
-    if (reserved) {puts("reserved ");}
-    puts(") at 0x");
-    puts_hex(faulting_address);
-    puts("\n");
-    PANIC("Page Fault!");
-}
-*/
-
 // The kernel's page directory
 page_directory_t *kernel_directory=0;
 
@@ -88,7 +24,7 @@ void initialise_paging()
 {
     // The size of physical memory. For the moment we
     // assume it is 16MB big.
-    u32int mem_end_page = 0x1000000;
+    u32int mem_end_page = 0x40000000;
     
     nframes = mem_end_page / 0x1000;
     frames = (u32int*)malloc(INDEX_FROM_BIT(nframes));

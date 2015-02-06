@@ -202,24 +202,24 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>B35767551A8557BB006CE4E8</string>
+				<string>B35765F71A854C31006CE4E8</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>Makefile</string>
+				<string>kernel.c</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>B35767561A8557BB006CE4E8</string>
+						<string>B35765F81A854C31006CE4E8</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>Makefile</string>
+						<string>kernel.c</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B35767571A8557BB006CE4E8</string>
+						<string>B35767841A8558D8006CE4E8</string>
 						<key>history</key>
 						<array>
-							<string>B35767531A8557B6006CE4E8</string>
+							<string>B357677F1A8558CE006CE4E8</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -242,24 +242,24 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>B35765F71A854C31006CE4E8</string>
+				<string>B35765FD1A854C31006CE4E8</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>kernel.c</string>
+				<string>start.asm</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>B35765F81A854C31006CE4E8</string>
+						<string>B35765FE1A854C31006CE4E8</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>kernel.c</string>
+						<string>start.asm</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B35767581A8557BB006CE4E8</string>
+						<string>B35767851A8558D8006CE4E8</string>
 						<key>history</key>
 						<array>
-							<string>B35767421A85574F006CE4E8</string>
+							<string>B35765EA1A854642006CE4E8</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -296,10 +296,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B35767591A8557BB006CE4E8</string>
+						<string>B35767861A8558D8006CE4E8</string>
 						<key>history</key>
 						<array>
-							<string>B35766D21A855499006CE4E8</string>
+							<string>B35767661A8557EF006CE4E8</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -316,46 +316,6 @@
 				<false/>
 				<key>RubberWindowFrame</key>
 				<string>0 459 1280 314 0 0 1280 778 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>B35765FD1A854C31006CE4E8</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>start.asm</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>B35765FE1A854C31006CE4E8</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>start.asm</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>B357675A1A8557BB006CE4E8</string>
-						<key>history</key>
-						<array>
-							<string>B35765EA1A854642006CE4E8</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1265, 645}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>15 92 1265 686 0 0 1280 778 </string>
 			</dict>
 		</dict>
 	</array>
@@ -435,12 +395,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>43</integer>
+									<integer>22</integer>
+									<integer>11</integer>
+									<integer>3</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 227}, {186, 572}}</string>
+							<string>{{0, 33}, {186, 572}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -475,7 +437,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>isrs.c</string>
+								<string>kernel.c</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -483,11 +445,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>isrs.c</string>
+										<string>kernel.c</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>B35767541A8557BB006CE4E8</string>
+										<string>B35767831A8558D8006CE4E8</string>
 										<key>history</key>
 										<array>
 											<string>B36A8E481A84205100C2FA2F</string>
@@ -527,19 +489,19 @@
 											<string>B357664C1A854FF0006CE4E8</string>
 											<string>B35766771A85528F006CE4E8</string>
 											<string>B35766781A85528F006CE4E8</string>
-											<string>B357667A1A85528F006CE4E8</string>
 											<string>B357668A1A855304006CE4E8</string>
 											<string>B357668C1A855304006CE4E8</string>
 											<string>B357669B1A855347006CE4E8</string>
 											<string>B35766A31A855368006CE4E8</string>
 											<string>B35766AC1A8553D7006CE4E8</string>
 											<string>B35766B81A855405006CE4E8</string>
-											<string>B35766C91A855477006CE4E8</string>
 											<string>B35766CA1A855477006CE4E8</string>
 											<string>B35766FC1A855555006CE4E8</string>
 											<string>B35766FD1A855555006CE4E8</string>
-											<string>B357672A1A8556EB006CE4E8</string>
-											<string>B357668B1A855304006CE4E8</string>
+											<string>B357675E1A8557EF006CE4E8</string>
+											<string>B357677C1A8558CE006CE4E8</string>
+											<string>B357677D1A8558CE006CE4E8</string>
+											<string>B35766C91A855477006CE4E8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -737,12 +699,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>B357675B1A8557BB006CE4E8</string>
 		<string>B35765FD1A854C31006CE4E8</string>
-		<string>B36A92671A845F4900C2FA2F</string>
-		<string>B35765F71A854C31006CE4E8</string>
 		<string>/Users/Walt/Desktop/Boom/Boom.xcodeproj</string>
-		<string>B35767551A8557BB006CE4E8</string>
+		<string>B35765F71A854C31006CE4E8</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 147 1280 631 0 0 1280 778 </string>

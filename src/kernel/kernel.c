@@ -26,16 +26,14 @@ void kernel()
     //    i = 10 / 0;
     //    putch(i);
     
-    /*int a = 1234;
+    char a = '1';
+    char *b = malloc(0);
+    *b = a;
+    char c = b;
     
-    int *p = (int*) malloc(sizeof(int));
-    *p = a;
-    int b = *p;
+    putch(c);
     
-    puts_decimal(b);
-    
-    
-        */
+ 
     return;
 }
 
