@@ -59,7 +59,7 @@ void move_csr(void)
 }
 
 /* Clears the screen */
-void cls()
+void clear()
 {
     unsigned blank;
     int i;
@@ -230,5 +230,15 @@ void settextcolor(unsigned char forecolor, unsigned char backcolor)
 void init_video(void)
 {
     textmemptr = (unsigned short *)0xB8000;
-    cls();
+    clear();
+}
+
+void PANIC(char *text){
+    clear();
+    puts("System error: ");
+    puts(text);
+    puts(" haulting system!");
+
+    __asm__("cli");
+    for(;;);
 }

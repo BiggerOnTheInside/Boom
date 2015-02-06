@@ -9,6 +9,7 @@
 /* Begin PBXFileReference section */
 		B35766111A854D00006CE4E8 /* paging.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = paging.c; sourceTree = "<group>"; };
 		B357661E1A854D4A006CE4E8 /* mem.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = mem.s; sourceTree = "<group>"; };
+		B35766741A8551D4006CE4E8 /* ata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ata.c; sourceTree = "<group>"; };
 		B36A8E2C1A841D3900C2FA2F /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
 		B36A8E2D1A841D4300C2FA2F /* keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyboard.h; sourceTree = "<group>"; };
 		B36A8E2F1A841D5400C2FA2F /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
@@ -42,6 +43,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		B35766731A8551C2006CE4E8 /* ata */ = {
+			isa = PBXGroup;
+			children = (
+				B35766741A8551D4006CE4E8 /* ata.c */,
+			);
+			path = ata;
+			sourceTree = "<group>";
+		};
 		B36A8E271A841D1F00C2FA2F /* drivers */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +86,7 @@
 		B36A900C1A84417C00C2FA2F /* hardware */ = {
 			isa = PBXGroup;
 			children = (
+				B35766731A8551C2006CE4E8 /* ata */,
 				B36A90251A8441ED00C2FA2F /* screen.c */,
 				B36A8E3C1A841E0C00C2FA2F /* keyboard.c */,
 			);

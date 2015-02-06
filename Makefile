@@ -55,7 +55,7 @@ link: $(C_OBJECTS)
 clean: 
 	-@$(RM) $(C_OBJECTS)
 
-github_update:
+github:
 	@make clean
 	@git add .
 	@git commit -a -m "Updating Sources"
