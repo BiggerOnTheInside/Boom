@@ -1976,7 +1976,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 41";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 500;
 		vrLoc = 377;
@@ -2026,7 +2026,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 39";
 		rLen = 0;
-		rLoc = 727;
+		rLoc = 735;
 		rType = 0;
 		vrLen = 438;
 		vrLoc = 441;
@@ -2526,7 +2526,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2596,7 +2596,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2666,7 +2666,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2716,7 +2716,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2766,7 +2766,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2816,7 +2816,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2866,7 +2866,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2916,7 +2916,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -2966,7 +2966,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -3016,7 +3016,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 43";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 0;
@@ -3106,7 +3106,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 859;
 		vrLoc = 0;
@@ -3146,7 +3146,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 859;
 		vrLoc = 0;
@@ -3186,7 +3186,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 853;
 		vrLoc = 0;
@@ -3226,7 +3226,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 853;
 		vrLoc = 0;
@@ -3316,7 +3316,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 786;
 		vrLoc = 0;
@@ -3356,7 +3356,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 790;
 		vrLoc = 0;
@@ -3634,7 +3634,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 38";
 		rLen = 0;
-		rLoc = 729;
+		rLoc = 737;
 		rType = 0;
 		vrLen = 779;
 		vrLoc = 0;
@@ -3734,7 +3734,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 31";
 		rLen = 0;
-		rLoc = 722;
+		rLoc = 730;
 		rType = 0;
 		vrLen = 703;
 		vrLoc = 0;
@@ -3744,7 +3744,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 32";
 		rLen = 0;
-		rLoc = 697;
+		rLoc = 705;
 		rType = 0;
 		vrLen = 746;
 		vrLoc = 0;
@@ -3784,7 +3784,7 @@
 		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
 		name = "kernel.c: 30";
 		rLen = 0;
-		rLoc = 673;
+		rLoc = 681;
 		rType = 0;
 		vrLen = 746;
 		vrLoc = 0;
@@ -3800,6 +3800,46 @@
 		vrLoc = 8045;
 	};
 	B35767861A8558D8006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
+		name = "paging.h: 5";
+		rLen = 0;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 0;
+	};
+	B35767871A8558F0006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 29";
+		rLen = 0;
+		rLoc = 637;
+		rType = 0;
+		vrLen = 486;
+		vrLoc = 264;
+	};
+	B35767881A8558F0006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B372FBC91A841C6000AA4A49 /* kernel.c */;
+		name = "kernel.c: 30";
+		rLen = 0;
+		rLoc = 681;
+		rType = 0;
+		vrLen = 754;
+		vrLoc = 0;
+	};
+	B35767891A8558F0006CE4E8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B36A8E431A841E5600C2FA2F /* start.asm */;
+		name = "start.asm: 512";
+		rLen = 0;
+		rLoc = 8618;
+		rType = 0;
+		vrLen = 648;
+		vrLoc = 8045;
+	};
+	B357678A1A8558F0006CE4E8 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = B36A919F1A844FA400C2FA2F /* paging.h */;
 		name = "paging.h: 5";
@@ -5187,6 +5227,10 @@
 			B35767841A8558D8006CE4E8 /* PBXTextBookmark */ = B35767841A8558D8006CE4E8 /* PBXTextBookmark */;
 			B35767851A8558D8006CE4E8 /* PBXTextBookmark */ = B35767851A8558D8006CE4E8 /* PBXTextBookmark */;
 			B35767861A8558D8006CE4E8 /* PBXTextBookmark */ = B35767861A8558D8006CE4E8 /* PBXTextBookmark */;
+			B35767871A8558F0006CE4E8 /* PBXTextBookmark */ = B35767871A8558F0006CE4E8 /* PBXTextBookmark */;
+			B35767881A8558F0006CE4E8 /* PBXTextBookmark */ = B35767881A8558F0006CE4E8 /* PBXTextBookmark */;
+			B35767891A8558F0006CE4E8 /* PBXTextBookmark */ = B35767891A8558F0006CE4E8 /* PBXTextBookmark */;
+			B357678A1A8558F0006CE4E8 /* PBXTextBookmark */ = B357678A1A8558F0006CE4E8 /* PBXTextBookmark */;
 			B36A8E481A84205100C2FA2F = B36A8E481A84205100C2FA2F /* PBXTextBookmark */;
 			B36A8E4A1A84205100C2FA2F = B36A8E4A1A84205100C2FA2F /* PBXTextBookmark */;
 			B36A8E4C1A84205100C2FA2F = B36A8E4C1A84205100C2FA2F /* PBXTextBookmark */;
@@ -5260,8 +5304,8 @@
 	B372FBC91A841C6000AA4A49 /* kernel.c */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1206, 614}}";
-			sepNavSelRange = "{673, 0}";
-			sepNavVisRange = "{0, 746}";
+			sepNavSelRange = "{681, 0}";
+			sepNavVisRange = "{0, 754}";
 			sepNavWindowFrame = "{{15, 72}, {1265, 706}}";
 		};
 	};

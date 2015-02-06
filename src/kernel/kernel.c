@@ -27,7 +27,7 @@ void kernel()
     //    putch(i);
     
     char a = '1';
-    char *b = malloc(0);
+    char *b = malloc(sizeof(a));
     *b = a;
     char c = b;
     
