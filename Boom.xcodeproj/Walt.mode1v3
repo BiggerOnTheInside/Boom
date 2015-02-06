@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B35766551A855008006CE4E8</string>
+						<string>B357665C1A8550AF006CE4E8</string>
 						<key>history</key>
 						<array>
 							<string>B35766191A854D3C006CE4E8</string>
@@ -256,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B35766561A855008006CE4E8</string>
+						<string>B357665D1A8550AF006CE4E8</string>
 						<key>history</key>
 						<array>
 							<string>B35765EF1A854C20006CE4E8</string>
@@ -296,7 +296,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B35766571A855008006CE4E8</string>
+						<string>B357665E1A8550AF006CE4E8</string>
 						<key>history</key>
 						<array>
 							<string>B35765EE1A854B42006CE4E8</string>
@@ -336,7 +336,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B35766581A855008006CE4E8</string>
+						<string>B357665F1A8550AF006CE4E8</string>
 						<key>history</key>
 						<array>
 							<string>B35765EA1A854642006CE4E8</string>
@@ -430,8 +430,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>10</integer>
-									<integer>6</integer>
+									<integer>16</integer>
 									<integer>5</integer>
 									<integer>3</integer>
 									<integer>0</integer>
@@ -475,7 +474,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>kheap.c</string>
+								<string>kernel.c</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -483,11 +482,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>kheap.c</string>
+										<string>kernel.c</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>B35766541A855008006CE4E8</string>
+										<string>B357665B1A8550AF006CE4E8</string>
 										<key>history</key>
 										<array>
 											<string>B36A8E481A84205100C2FA2F</string>
@@ -520,7 +519,6 @@
 											<string>B35766391A854FF0006CE4E8</string>
 											<string>B357663A1A854FF0006CE4E8</string>
 											<string>B357663B1A854FF0006CE4E8</string>
-											<string>B357663C1A854FF0006CE4E8</string>
 											<string>B357663D1A854FF0006CE4E8</string>
 											<string>B357663E1A854FF0006CE4E8</string>
 											<string>B357663F1A854FF0006CE4E8</string>
@@ -538,7 +536,8 @@
 											<string>B357664B1A854FF0006CE4E8</string>
 											<string>B357664C1A854FF0006CE4E8</string>
 											<string>B357664D1A854FF0006CE4E8</string>
-											<string>B357664E1A854FF0006CE4E8</string>
+											<string>B35766591A8550AF006CE4E8</string>
+											<string>B357665A1A8550AF006CE4E8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

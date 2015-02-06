@@ -30,7 +30,7 @@ void kernel()
     
     int a = 1234;
     
-    int *p = (int*) kmalloc(sizeof(int));
+    int *p = (int*) malloc(sizeof(int));
 
     int b = *p;
     
