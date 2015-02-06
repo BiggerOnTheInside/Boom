@@ -1,7 +1,6 @@
 /*************************************************************************/
 /* Copyright 2015 Bigger On The Inside Development, all rights reserved. */
 /*************************************************************************/
-
 #include <system.h>
 
 /* These are function prototypes for all of the exception

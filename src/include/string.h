@@ -1,12 +1,6 @@
-/*
- *  string.h
- *  Boom
- *
- *  Created by Walt Pach on 2/5/15.
- *  Copyright 2015 __MyCompanyName__. All rights reserved.
- *
- */
-
+/*************************************************************************/
+/* Copyright 2015 Bigger On The Inside Development, all rights reserved. */
+/*************************************************************************/
 #ifndef __SYSTEM_STRING_H
 #define __SYSTEM_STRING_H
 

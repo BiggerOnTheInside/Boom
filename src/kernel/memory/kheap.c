@@ -1,15 +1,13 @@
-// kheap.c -- Kernel heap functions, also provides
-//            a placement malloc() for use before the heap is 
-//            initialised.
-//            Written for JamesM's kernel development tutorials.
-
+/*************************************************************************/
+/* Copyright 2015 Bigger On The Inside Development, all rights reserved. */
+/*************************************************************************/
 #include <system.h>
 
 // end is defined in the linker script.
 extern u32int end;
 u32int placement_address = (u32int)&end;
 
-u32int kmalloc_int(u32int sz, int align, u32int *phys)
+u32int malloc_int(u32int sz, int align, u32int *phys)
 {
     // This will eventually call malloc() on the kernel heap.
     // For now, though, we just assign memory at placement_address
@@ -26,26 +24,28 @@ u32int kmalloc_int(u32int sz, int align, u32int *phys)
         *phys = placement_address;
     }
     u32int tmp = placement_address;
+    
     placement_address += sz;
+    
     return tmp;
 }
 
-u32int kmalloc_a(u32int sz)
+u32int malloc_a(u32int sz)
 {
-    return kmalloc_int(sz, 1, 0);
+    return malloc_int(sz, 1, 0);
 }
 
-u32int kmalloc_p(u32int sz, u32int *phys)
+u32int malloc_p(u32int sz, u32int *phys)
 {
-    return kmalloc_int(sz, 0, phys);
+    return malloc_int(sz, 0, phys);
 }
 
-u32int kmalloc_ap(u32int sz, u32int *phys)
+u32int malloc_ap(u32int sz, u32int *phys)
 {
-    return kmalloc_int(sz, 1, phys);
+    return malloc_int(sz, 1, phys);
 }
 
-u32int kmalloc(u32int sz)
+u32int malloc(u32int sz)
 {
-    return kmalloc_int(sz, 0, 0);
+    return malloc_int(sz, 0, 0);
 }

@@ -1,9 +1,6 @@
-/* bkerndev - Bran's Kernel Development Tutorial
- *  By:   Brandon F. (friesenb@gmail.com)
- *  Desc: Interrupt Request management
- *
- *  Notes: No warranty expressed or implied. Use at own risk. */
-
+/*************************************************************************/
+/* Copyright 2015 Bigger On The Inside Development, all rights reserved. */
+/*************************************************************************/
 #include <types.h>
 
 /* These are own ISRs that point to our special IRQ handler

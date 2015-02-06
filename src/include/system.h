@@ -1,8 +1,6 @@
-/* bkerndev - Bran's Kernel Development Tutorial
- *  By:   Brandon F. (friesenb@gmail.com)
- *  Desc: Global function declarations and type definitions
- *
- *  Notes: No warranty expressed or implied. Use at own risk. */
+/*************************************************************************/
+/* Copyright 2015 Bigger On The Inside Development, all rights reserved. */
+/*************************************************************************/
 #ifndef __SYSTEM_H
 #define __SYSTEM_H
 

@@ -1,3 +1,6 @@
+/*************************************************************************/
+/* Copyright 2015 Bigger On The Inside Development, all rights reserved. */
+/*************************************************************************/
 #include <system.h>
 
 void *memcpy(void *dest, const void *src, size_t count)
