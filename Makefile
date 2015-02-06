@@ -54,6 +54,14 @@ link: $(C_OBJECTS)
 	
 clean: 
 	-@$(RM) $(C_OBJECTS)
+
+github_update:
+	@make clean
+	@git add .
+	@git commit -a -m "Updating Sources"
+	-@git remote remove origin
+	@git remote add origin https://github.com/BiggerOnTheInside/Boom.git
+	@git push origin master
 	
 .c.o:
 	@$(C_COMPILER) $(C_FLAGS) $@ $<
