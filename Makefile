@@ -12,18 +12,19 @@ ASSEMBLER                    = nasm
 S_ASSEMBER                  = i686-pc-elf-gcc
 LINKER                      = i686-pc-elf-ld
 
-C_COMPILER_FLAGS            = -O -fstrength-reduce -fomit-frame-pointer -finline-functions -nostdinc -fno-builtin -I./src/include -c -o
+# Change '-w' to '-Wall' to print warning messages.
+C_COMPILER_FLAGS            = -w -O -fstrength-reduce -fomit-frame-pointer -finline-functions -nostdinc -fno-builtin -I./src/include -c -o
 ASSEMBLER_FLAGS             = -f elf -o
 S_ASSEMBER_FLAGS            = -c -o
 LINKER_FLAGS                = -T ./link.ld -o $(BINARY)
-BINARY                      = ./kernel.bin
+BINARY                      = ./kernel.out
 EMULATOR                    = qemu
 EMULATOR_FLAGS              = -kernel $(BINARY)
 
 
 # Files:
     # Drivers.
-    ATA         = $(C_SOURCE_FOLDER)/drivers/hardware/ata/ata.c
+    IDE         = $(C_SOURCE_FOLDER)/drivers/hardware/ata/ide.c
     SCREEN      = $(C_SOURCE_FOLDER)/drivers/hardware/screen.c
     KEYBOARD    = $(C_SOURCE_FOLDER)/drivers/hardware/keyboard.c
     TIMER       = $(C_SOURCE_FOLDER)/drivers/timer.c
@@ -41,7 +42,7 @@ EMULATOR_FLAGS              = -kernel $(BINARY)
     STRING		= $(C_SOURCE_FOLDER)/string.c
 	
 # Globals
-C_SOURCES                   = $(KERNEL) $(KHEAP) $(PAGING) $(ARRAY) $(GDT) $(IRQ) $(ISRS) $(IDT) $(IO) $(ATA) $(SCREEN) $(KEYBOARD) $(TIMER) $(STRING)
+C_SOURCES                   = $(KERNEL) $(KHEAP) $(PAGING) $(ARRAY) $(GDT) $(IRQ) $(ISRS) $(IDT) $(IO) $(IDE) $(SCREEN) $(KEYBOARD) $(TIMER) $(STRING)
 OBJECTS                     = $(ASM_OBJECT_FOLDER)/start.o $(C_SOURCES:.c=.o)
 
 
@@ -51,7 +52,10 @@ OBJECTS                     = $(ASM_OBJECT_FOLDER)/start.o $(C_SOURCES:.c=.o)
 ASSEMBLE                    = assemble
 LINK                        = link
 
-all: clean $(ASSEMBLE) $(OBJECTS) $(LINK)
+all: clear clean $(ASSEMBLE) $(OBJECTS) $(LINK)
+
+clear:
+	@clear
 
 assemble:
 	@echo "[Assemble] Starting assembler proccess."

@@ -14,7 +14,7 @@
 		B314FFBA1A8704290064A3F5 /* kheap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kheap.h; sourceTree = "<group>"; };
 		B314FFBB1A8704310064A3F5 /* kheap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kheap.c; sourceTree = "<group>"; };
 		B314FFBD1A87044C0064A3F5 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		B35766741A8551D4006CE4E8 /* ata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ata.c; sourceTree = "<group>"; };
+		B35766741A8551D4006CE4E8 /* ide.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ide.c; sourceTree = "<group>"; };
 		B36A8E2C1A841D3900C2FA2F /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
 		B36A8E2D1A841D4300C2FA2F /* keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyboard.h; sourceTree = "<group>"; };
 		B36A8E2F1A841D5400C2FA2F /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		B35766731A8551C2006CE4E8 /* ata */ = {
 			isa = PBXGroup;
 			children = (
-				B35766741A8551D4006CE4E8 /* ata.c */,
+				B35766741A8551D4006CE4E8 /* ide.c */,
 			);
 			path = ata;
 			sourceTree = "<group>";

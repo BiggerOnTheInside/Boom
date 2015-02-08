@@ -27,12 +27,19 @@ void kernel()
     //    i = 10 / 0;
     //    putch(i);
     puts("Just testing the paging, and heap stuff :)\n\n\n");
+    ide_initialize(0x1F0, 0x3F4, 0x170, 0x374, 0x000);
     
-    puts("Mapped memory: ");
-    puts_hex(end);
- 
-    u32int *ptr = (u32int*)0xfffffffffffffffffffffffff;
-    u32int a = *ptr;
+    char a = 'W';
+    char *ptr = kmalloc(sizeof(char));
+    u32int *pt = kmalloc(sizeof(u32int));
+    
+    puts_hex(ptr);
+    putch('\n');
+    puts_hex(pt);
+    
+    kfree(ptr);
+    
+    
     return;
 }
 

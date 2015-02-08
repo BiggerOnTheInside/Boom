@@ -4,6 +4,9 @@
 #ifndef __SYSTEM_TYPES_H
 #define __SYSTEM_TYPES_H
 
+#define insl(port, buffer, count) \
+__asm__ ("cld; rep; insl" :: "D" (buffer), "d" (port), "c" (count))
+
 typedef int size_t;
 typedef unsigned int   u32int;
 typedef          int   s32int;
