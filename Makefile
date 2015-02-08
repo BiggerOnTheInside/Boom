@@ -1,67 +1,109 @@
-ASSEMBLER = nasm																											# Assember binary to run.
-C_COMPILER= i686-pc-elf-gcc																									# C Compiler (eg. GCC) to use.
-LINKER= i686-pc-elf-ld																										# Object linker to use (eg. LD).
+# Locations
+C_HEADER_FILES_DIRECTORY    = ./src/include
+C_SOURCE_FILES_DIRECTORY    = ./src
 
-ASSEMBLER_FLAGS = -f elf -o																									# Assembler flags to use.
-ASSEMBLER_MEM_FLAGS = -c -o																									# Flags for the memory component assember.
-C_FLAGS = -Wall -O -fstrength-reduce -fomit-frame-pointer -finline-functions -nostdinc -fno-builtin -I./src/include -c -o	# C Compiler flags to use.
-LINKER_FLAGS= -T ./link.ld -o																								# Object linker flags to use.
-
-ASSEMBLE = assemble																											# Section to assemble the code.
-COMPILE = compile																											# Section to compile the code.
-LINK = link
-
-OBJECT_DIR = ./objects
-SOURCE_DIR = ./src
+C_SOURCE_FOLDER             = ./src
+ASM_OBJECT_FOLDER           = ./obj
 
 
-# File specific configuration:
-KERNEL = $(SOURCE_DIR)/kernel/kernel.c
-GDT = $(SOURCE_DIR)/kernel/gdt.c
-IRQ = $(SOURCE_DIR)/kernel/irq.c
-ISRS = $(SOURCE_DIR)/kernel/isrs.c
-IDT = $(SOURCE_DIR)/kernel/idt.c
-IO = $(SOURCE_DIR)/kernel/io.c
-STRING =  $(SOURCE_DIR)/string.c
-KEYBOARD = $(SOURCE_DIR)/drivers/hardware/keyboard.c
-SCREEN =  $(SOURCE_DIR)/drivers/hardware/screen.c
-TIMER = $(SOURCE_DIR)/drivers/timer.c
-STRING = $(SOURCE_DIR)/string.c
-KHEAP = $(SOURCE_DIR)/kernel/memory/kheap.c
-PAGING = $(SOURCE_DIR)/kernel/memory/paging.c
+# Configuration Options
+C_COMPILER                  = i686-pc-elf-gcc
+ASSEMBLER                    = nasm
+S_ASSEMBER                  = i686-pc-elf-gcc
+LINKER                      = i686-pc-elf-ld
 
-C_SOURCES = $(KERNEL) $(GDT) $(IRQ) $(ISRS) $(IDT) $(IO) $(STRING) $(KEYBOARD) $(SCREEN) $(TIMER) $(PAGING) $(KHEAP)
-C_OBJECTS=$(C_SOURCES:.c=.o) $(OBJECT_DIR)/start.o $(OBJECT_DIR)/mem.o
+C_COMPILER_FLAGS            = -O -fstrength-reduce -fomit-frame-pointer -finline-functions -nostdinc -fno-builtin -I./src/include -c -o
+ASSEMBLER_FLAGS             = -f elf -o
+S_ASSEMBER_FLAGS            = -c -o
+LINKER_FLAGS                = -T ./link.ld -o $(BINARY)
+BINARY                      = ./kernel.bin
+EMULATOR                    = qemu
+EMULATOR_FLAGS              = -kernel $(BINARY)
 
-#ifdef DEBUG
-	$(C_FLAGS) =  -O -fstrength-reduce -fomit-frame-pointer -finline-functions -nostdinc -fno-builtin -I./src/include -c -o
-#elseh
-#	$(C_FLAGS) = -O -fstrength-reduce -fomit-frame-pointer -finline-functions -nostdinc -fno-builtin -I./src/include -c -o
-#endif
 
-all: $(ASSEMBLE) $(C_OBJECTS) $(LINK)
+# Files:
+    # Drivers.
+    ATA         = $(C_SOURCE_FOLDER)/drivers/hardware/ata/ata.c
+    SCREEN      = $(C_SOURCE_FOLDER)/drivers/hardware/screen.c
+    KEYBOARD    = $(C_SOURCE_FOLDER)/drivers/hardware/keyboard.c
+    TIMER       = $(C_SOURCE_FOLDER)/drivers/timer.c
+
+    # Kernel.
+    KHEAP       = $(C_SOURCE_FOLDER)/kernel/memory/kheap.c
+    PAGING      = $(C_SOURCE_FOLDER)/kernel/memory/paging.c
+    ARRAY       = $(C_SOURCE_FOLDER)/kernel/memory/ordered_array.c
+    GDT         = $(C_SOURCE_FOLDER)/kernel/gdt.c
+    IRQ         = $(C_SOURCE_FOLDER)/kernel/irq.c
+    ISRS        = $(C_SOURCE_FOLDER)/kernel/isrs.c
+    IDT         = $(C_SOURCE_FOLDER)/kernel/idt.c
+    KERNEL      = $(C_SOURCE_FOLDER)/kernel/kernel.c
+    IO          = $(C_SOURCE_FOLDER)/kernel/io.c
+    STRING		= $(C_SOURCE_FOLDER)/string.c
+	
+# Globals
+C_SOURCES                   = $(KERNEL) $(KHEAP) $(PAGING) $(ARRAY) $(GDT) $(IRQ) $(ISRS) $(IDT) $(IO) $(ATA) $(SCREEN) $(KEYBOARD) $(TIMER) $(STRING)
+OBJECTS                     = $(ASM_OBJECT_FOLDER)/start.o $(C_SOURCES:.c=.o)
+
+
+
+
+# Actions
+ASSEMBLE                    = assemble
+LINK                        = link
+
+all: clean $(ASSEMBLE) $(OBJECTS) $(LINK)
 
 assemble:
-	@echo "Now assembling kernel start poing."
-	@echo "Please type your sudo password to save the object file: "
-	@sudo $(ASSEMBLER) $(ASSEMBLER_FLAGS) $(OBJECT_DIR)/start.o $(SOURCE_DIR)/kernel/start.asm
-	@echo "Done assembling kernel start point."
+	@echo "[Assemble] Starting assembler proccess."
 	
-	@echo "Now assembling kernel memory sections."
-	@$(C_COMPILER) $(ASSEMBLER_MEM_FLAGS) $(OBJECT_DIR)/mem.o $(SOURCE_DIR)/kernel/memory/mem.s
-link: $(C_OBJECTS)
-	@i686-pc-elf-ld -T ./link.ld -o kernel.bin $(C_OBJECTS)
+	@echo "[Assemble] Assembling start point."
+	@sudo $(ASSEMBLER) $(ASSEMBLER_FLAGS) $(ASM_OBJECT_FOLDER)/start.o $(C_SOURCE_FOLDER)/kernel/start.asm
+	@echo "[Assemble] Done assembling start point."
 	
-clean: 
-	-@$(RM) $(C_OBJECTS)
+	@echo "[Assemble] Done assembling sources."
+	
 
+link: $(OBJECTS)
+	@echo "[Link] Starting linking proccess."
+	
+	@echo "[Link] Linking source object files together into binary."
+	@$(LINKER) $(LINKER_FLAGS) $(OBJECTS)
+	@echo "[Link] Done linking source objects together."
+	
+	@echo "[Link] Done linking objects."
+
+clean:
+	@echo "[Clean] Deleting object files."
+	-@$(RM) $(OBJECTS)
+	@echo "[Clean] Done deleting object files."
+    
 github:
+	@echo "[GitHub] Begining upload."
+	@make
 	@make clean
 	@git add .
 	@git commit -a -m "Updating Sources"
 	-@git remote remove origin
 	@git remote add origin https://github.com/BiggerOnTheInside/Boom.git
 	@git push origin master
+	@echo "[GitHub] Done uploading."
+	
+run:
+	@echo "[Run] Making sources."
+	@make
+	@echo "[Run] Done making sources."
+	
+	@echo "[Run] Cleaning objects."
+	@make clean
+	@echo "[Run] Done cleaning objects."
+	
+	@echo "[Run] Starting emulator."
+	-@$(EMULATOR) $(EMULATOR_FLAGS)
+	@echo "[Run] Emulator stopped."
+	
+	@echo "[Run] Finished running."
 	
 .c.o:
-	@$(C_COMPILER) $(C_FLAGS) $@ $<
+	@echo "[Compiler] Compiling C source file."
+	@$(C_COMPILER) $(C_COMPILER_FLAGS) $@ $<
+	@echo "[Compiler] Done compiling C source file."

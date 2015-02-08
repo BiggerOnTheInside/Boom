@@ -4,6 +4,8 @@
 
 #include <system.h>
 
+extern u32int end;
+
 void kernel()
 {
     int i;
@@ -13,9 +15,8 @@ void kernel()
     irq_install();
     initialise_paging();
     init_video();
+    keyboard_install();
     timer_install();
-   //// keyboard_install();
-   //paging_init();
     
     // And this inside a function
         
@@ -25,15 +26,13 @@ void kernel()
     
     //    i = 10 / 0;
     //    putch(i);
+    puts("Just testing the paging, and heap stuff :)\n\n\n");
     
-    char a = '1';
-    char *b = malloc(sizeof(a));
-    *b = a;
-    char c = b;
-    
-    putch(c);
-    
+    puts("Mapped memory: ");
+    puts_hex(end);
  
+    u32int *ptr = (u32int*)0xfffffffffffffffffffffffff;
+    u32int a = *ptr;
     return;
 }
 

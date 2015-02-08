@@ -43,3 +43,35 @@ u16int inw(u16int port)
     asm volatile ("inw %1, %0" : "=a" (ret) : "dN" (port));
     return ret;
 }
+
+extern void panic(const char *message, const char *file, u32int line)
+{
+    // We encountered a massive problem and have to stop.
+    asm volatile("cli"); // Disable interrupts.
+    
+    puts("PANIC(");
+    puts(message);
+    puts(") at ");
+    puts(file);
+    puts(":");
+    puts_decimal(line);
+    puts("\n");
+    // Halt by going into an infinite loop.
+    for(;;);
+}
+
+extern void panic_assert(const char *file, u32int line, const char *desc)
+{
+    // An assertion failed, and we have to panic.
+    asm volatile("cli"); // Disable interrupts.
+    
+    puts("ASSERTION-FAILED(");
+    puts(desc);
+    puts(") at ");
+    puts(file);
+    puts(":");
+    puts_decimal(line);
+    puts("\n");
+    // Halt by going into an infinite loop.
+    for(;;);
+}

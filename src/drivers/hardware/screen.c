@@ -232,13 +232,3 @@ void init_video(void)
     textmemptr = (unsigned short *)0xB8000;
     clear();
 }
-
-void PANIC(char *text){
-    clear();
-    puts("System error: ");
-    puts(text);
-    puts(" haulting system!");
-
-    __asm__("cli");
-    for(;;);
-}
