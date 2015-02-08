@@ -79,7 +79,6 @@ clean:
     
 github:
 	@echo "[GitHub] Begining upload."
-	@make
 	@make clean
 	@git add .
 	@git commit -a -m "Updating Sources"
