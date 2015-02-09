@@ -11,7 +11,6 @@ extern u32int end, placement_address;
 
 void kernel(struct multiboot *mboot_ptr)
 {
-    int i;
     gdt_install();
     idt_install();
     isrs_install();

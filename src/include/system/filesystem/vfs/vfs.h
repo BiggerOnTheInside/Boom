@@ -7,6 +7,9 @@
  *
  */
 
+#ifndef __SYSTEM_VFS_H
+#define __SYSTEM_VFS_H
+
 #define FS_FILE        0x01
 #define FS_DIRECTORY   0x02
 #define FS_CHARDEVICE  0x03
@@ -15,6 +18,10 @@
 #define FS_SYMLINK     0x06
 #define FS_MOUNTPOINT  0x08 // Is the file an active mountpoint?
 
+struct fs_node;
+
+// These typedefs define the type of callbacks - called when read/write/open/close
+// are called.
 typedef u32int (*read_type_t)(struct fs_node*,u32int,u32int,u8int*);
 typedef u32int (*write_type_t)(struct fs_node*,u32int,u32int,u8int*);
 typedef void (*open_type_t)(struct fs_node*);
@@ -41,16 +48,22 @@ typedef struct fs_node
     struct fs_node *ptr; // Used by mountpoints and symlinks.
 } fs_node_t;
 
-struct dirent // One of these is returned by the readdir call, according to POSIX.
+struct dirent
 {
     char name[128]; // Filename.
     u32int ino;     // Inode number. Required by POSIX.
 };
 
-extern fs_node_t *fs_root;
+extern fs_node_t *fs_root; // The root of the filesystem.
 
+// Standard read/write/open/close functions. Note that these are all suffixed with
+// _fs to distinguish them from the read/write/open/close which deal with file descriptors
+// , not file nodes.
 extern u32int read_fs(fs_node_t *node, u32int offset, u32int size, u8int *buffer);
 extern u32int write_fs(fs_node_t *node, u32int offset, u32int size, u8int *buffer);
 extern void open_fs(fs_node_t *node, u8int read, u8int write);
 extern void close_fs(fs_node_t *node);
+extern struct dirent *readdir_fs(fs_node_t *node, u32int index);
 extern fs_node_t *finddir_fs(fs_node_t *node, char *name);
+
+#endif

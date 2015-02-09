@@ -41,8 +41,12 @@ EMULATOR_FLAGS              = -kernel $(BINARY)
     IO          = $(C_SOURCE_FOLDER)/kernel/io.c
     STRING		= $(C_SOURCE_FOLDER)/string.c
 	
+	# Filesystem.
+	VFS			= $(C_SOURCE_FOLDER)/filesystem/vfs/vfs.c
+	INITRD		= $(C_SOURCE_FOLDER)/filesystem/initrd/initrd.c
+	
 # Globals
-C_SOURCES                   = $(KERNEL) $(KHEAP) $(PAGING) $(ARRAY) $(GDT) $(IRQ) $(ISRS) $(IDT) $(IO) $(SCREEN) $(KEYBOARD) $(TIMER) $(STRING)
+C_SOURCES                   = $(KERNEL) $(KHEAP) $(PAGING) $(ARRAY) $(GDT) $(IRQ) $(ISRS) $(IDT) $(IO) $(SCREEN) $(KEYBOARD) $(TIMER) $(STRING) $(VFS) $(INITRD)
 OBJECTS                     = $(ASM_OBJECT_FOLDER)/start.o $(C_SOURCES:.c=.o)
 
 

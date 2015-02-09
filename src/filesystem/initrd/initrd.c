@@ -93,9 +93,9 @@ fs_node_t *initialise_initrd(u32int location){
     initrd_root->impl = 0;
 
     initrd_dev = (fs_node_t*)malloc(sizeof(fs_node_t));
-    strcpy(initrd_dev->, "dev");
+    strcpy(initrd_dev->name, "dev");
 
-    initrd_dev->mask = initrd_dev->uide = initrd_dev->gid = initrd_dev->inode = initrd_dev->length = 0;
+    initrd_dev->mask = initrd_dev->uid = initrd_dev->gid = initrd_dev->inode = initrd_dev->length = 0;
     initrd_dev->flags = FS_DIRECTORY;
     initrd_dev->read = 0;
     initrd_dev->write = 0;
@@ -126,7 +126,7 @@ fs_node_t *initialise_initrd(u32int location){
         root_nodes[i].finddir = 0;
         root_nodes[i].open = 0;
         root_nodes[i].close = 0;
-        root_nodes[i].imp = 0;
+        root_nodes[i].impl = 0;
     }
 
     return initrd_root;
