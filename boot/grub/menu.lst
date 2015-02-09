@@ -1,0 +1,3 @@
+title   Yoda Pre-Alpha Kernel
+        root    (fd0)
+        kernel  /kernel.bin

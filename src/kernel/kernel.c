@@ -3,43 +3,60 @@
 /*************************************************************************/
 
 #include <system.h>
+#include <system/multiboot.h>
+#include <system/filesystem/vfs/vfs.h>
+#include <system/filesystem/initrd/initrd.h>
 
-extern u32int end;
+extern u32int end, placement_address;
 
-void kernel()
+void kernel(struct multiboot *mboot_ptr)
 {
     int i;
     gdt_install();
     idt_install();
     isrs_install();
     irq_install();
-    initialise_paging();
-    init_video();
-    keyboard_install();
-    timer_install();
-    
     // And this inside a function
         
     __asm__ __volatile__ ("sti");
     
-    puts("Hello World!\n");
     
-    //    i = 10 / 0;
-    //    putch(i);
-    puts("Just testing the paging, and heap stuff :)\n\n\n");
-    ide_initialize(0x1F0, 0x3F4, 0x170, 0x374, 0x000);
+    ASSERT(mboot_ptr->mods_count > 0);
+    u32int initrd_location = *((u32int*)mboot_ptr->mods_addr);
+    u32int initrd_end = *(u32int*)(mboot_ptr->mods_addr+4);
+    // Don't trample our module with placement accesses, please!
+    placement_address = initrd_end;
     
-    char a = 'W';
-    char *ptr = kmalloc(sizeof(char));
-    u32int *pt = kmalloc(sizeof(u32int));
+    initialise_paging();
+    init_video();
+    keyboard_install();
+    timer_install();
+
+    fs_root = initialise_initrd(initrd_location);
     
-    puts_hex(ptr);
-    putch('\n');
-    puts_hex(pt);
-    
-    kfree(ptr);
-    
-    
+    int i = 0;
+    struct dirent *node = 0;
+    while ( (node = readdir_fs(fs_root, i)) != 0)
+    {
+        puts("Found file ");
+        puts(node->name);
+        fs_node_t *fsnode = finddir_fs(fs_root, node->name);
+        
+        if ((fsnode->flags&0x7) == FS_DIRECTORY)
+            puts("\n\t(directory)\n");
+        else
+        {
+            puts("\n\t contents: \"");
+            char buf[256];
+            u32int sz = read_fs(fsnode, 0, 256, buf);
+            int j;
+            for (j = 0; j < sz; j++)
+                putch(buf[j]);
+            
+            puts("\"\n");
+        }
+        i++;
+    }
     return;
 }
 

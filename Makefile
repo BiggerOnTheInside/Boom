@@ -3,7 +3,7 @@ C_HEADER_FILES_DIRECTORY    = ./src/include
 C_SOURCE_FILES_DIRECTORY    = ./src
 
 C_SOURCE_FOLDER             = ./src
-ASM_OBJECT_FOLDER           = ./obj
+ASM_OBJECT_FOLDER           = ./objects
 
 
 # Configuration Options
@@ -42,7 +42,7 @@ EMULATOR_FLAGS              = -kernel $(BINARY)
     STRING		= $(C_SOURCE_FOLDER)/string.c
 	
 # Globals
-C_SOURCES                   = $(KERNEL) $(KHEAP) $(PAGING) $(ARRAY) $(GDT) $(IRQ) $(ISRS) $(IDT) $(IO) $(IDE) $(SCREEN) $(KEYBOARD) $(TIMER) $(STRING)
+C_SOURCES                   = $(KERNEL) $(KHEAP) $(PAGING) $(ARRAY) $(GDT) $(IRQ) $(ISRS) $(IDT) $(IO) $(SCREEN) $(KEYBOARD) $(TIMER) $(STRING)
 OBJECTS                     = $(ASM_OBJECT_FOLDER)/start.o $(C_SOURCES:.c=.o)
 
 

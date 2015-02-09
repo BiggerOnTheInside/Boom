@@ -113,11 +113,11 @@ void initialise_paging()
     u32int mem_end_page = 0x1000000;
     
     nframes = mem_end_page / 0x1000;
-    frames = (u32int*)kmalloc(INDEX_FROM_BIT(nframes));
+    frames = (u32int*)malloc(INDEX_FROM_BIT(nframes));
     memset(frames, 0, INDEX_FROM_BIT(nframes));
     
     // Let's make a page directory.
-    kernel_directory = (page_directory_t*)kmalloc_a(sizeof(page_directory_t));
+    kernel_directory = (page_directory_t*)malloc_a(sizeof(page_directory_t));
     memset(kernel_directory, 0, sizeof(page_directory_t));
     current_directory = kernel_directory;
 
@@ -135,7 +135,7 @@ void initialise_paging()
     // transparently, as if paging wasn't enabled.
     // NOTE that we use a while loop here deliberately.
     // inside the loop body we actually change placement_address
-    // by calling kmalloc(). A while loop causes this to be
+    // by calling malloc(). A while loop causes this to be
     // computed on-the-fly rather than once at the start.
     // Allocate a lil' bit extra so the kernel heap can be
     // initialised properly.
@@ -185,7 +185,7 @@ page_t *get_page(u32int address, int make, page_directory_t *dir)
     else if(make)
     {
         u32int tmp;
-        dir->tables[table_idx] = (page_table_t*)kmalloc_ap(sizeof(page_table_t), &tmp);
+        dir->tables[table_idx] = (page_table_t*)malloc_ap(sizeof(page_table_t), &tmp);
         memset(dir->tables[table_idx], 0, 0x1000);
         dir->tablesPhysical[table_idx] = tmp | 0x7; // PRESENT, RW, US.
         return &dir->tables[table_idx]->pages[address%1024];

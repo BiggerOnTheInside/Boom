@@ -14,7 +14,7 @@ u32int placement_address = (u32int)&end;
 extern page_directory_t *kernel_directory;
 heap_t *kheap=0;
 
-u32int kmalloc_int(u32int sz, int align, u32int *phys)
+u32int malloc_int(u32int sz, int align, u32int *phys)
 {
     if (kheap != 0)
     {
@@ -49,24 +49,24 @@ void kfree(void *p)
     free(p, kheap);
 }
 
-u32int kmalloc_a(u32int sz)
+u32int malloc_a(u32int sz)
 {
-    return kmalloc_int(sz, 1, 0);
+    return malloc_int(sz, 1, 0);
 }
 
-u32int kmalloc_p(u32int sz, u32int *phys)
+u32int malloc_p(u32int sz, u32int *phys)
 {
-    return kmalloc_int(sz, 0, phys);
+    return malloc_int(sz, 0, phys);
 }
 
-u32int kmalloc_ap(u32int sz, u32int *phys)
+u32int malloc_ap(u32int sz, u32int *phys)
 {
-    return kmalloc_int(sz, 1, phys);
+    return malloc_int(sz, 1, phys);
 }
 
-u32int kmalloc(u32int sz)
+u32int malloc(u32int sz)
 {
-    return kmalloc_int(sz, 0, 0);
+    return malloc_int(sz, 0, 0);
 }
 
 static void expand(u32int new_size, heap_t *heap)
@@ -163,7 +163,7 @@ static s8int header_t_less_than(void*a, void *b)
 
 heap_t *create_heap(u32int start, u32int end_addr, u32int max, u8int supervisor, u8int readonly)
 {
-    heap_t *heap = (heap_t*)kmalloc(sizeof(heap_t));
+    heap_t *heap = (heap_t*)malloc(sizeof(heap_t));
 
     // All our assumptions are made on startAddress and endAddress being page-aligned.
     ASSERT(start%0x1000 == 0);

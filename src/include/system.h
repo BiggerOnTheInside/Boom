@@ -12,10 +12,10 @@
 #include <system/idt.h>
 #include <system/gdt.h>
 #include <system/io.h>
-#include <system/ordered_array.h>
-#include <system/memory.h>
-#include <system/kheap.h>
-#include <system/paging.h>
+#include <system/memory/ordered_array.h>
+#include <system/memory/memory.h>
+#include <system/memory/kheap.h>
+#include <system/memory/paging.h>
 
 #include <drivers/keyboard.h>
 #include <drivers/timer.h>
