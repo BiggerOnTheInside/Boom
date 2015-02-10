@@ -36,6 +36,12 @@
 		B372FBC91A841C6000AA4A49 /* kernel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernel.c; sourceTree = "<group>"; };
 		B372FBCB1A841CA700AA4A49 /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = io.c; sourceTree = "<group>"; };
 		B372FBD01A841CE900AA4A49 /* string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = string.c; sourceTree = "<group>"; };
+		B3A52CC51A8A7E97005D59B3 /* stdio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdio.h; sourceTree = "<group>"; };
+		B3B2DA661A8987DE00BDAFC4 /* gdt.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = gdt.html; sourceTree = "<group>"; };
+		B3B2DC021A8996D800BDAFC4 /* colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colors.h; sourceTree = "<group>"; };
+		B3EBBD911A8A421E0055FFA9 /* stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
+		B3EBBD951A8A42F80055FFA9 /* elf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = elf.h; sourceTree = "<group>"; };
+		B3EBBDAA1A8A45430055FFA9 /* elf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = elf.c; sourceTree = "<group>"; };
 		B3EE4C761A893AC300BAB01C /* atapio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = atapio.c; sourceTree = "<group>"; };
 		B3EE4C7B1A893D2400BAB01C /* vfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vfs.c; sourceTree = "<group>"; };
 		B3EE4C811A893F4000BAB01C /* initrd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = initrd.c; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 		B372FBC21A841C1A00AA4A49 /* doc */ = {
 			isa = PBXGroup;
 			children = (
+				B3B2DA651A8987C900BDAFC4 /* kernel */,
 			);
 			path = doc;
 			sourceTree = "<group>";
@@ -143,6 +150,10 @@
 				B36A8E2C1A841D3900C2FA2F /* system.h */,
 				B36A8E8D1A8426A800C2FA2F /* types.h */,
 				B36A8E381A841DE000C2FA2F /* string.h */,
+				B3B2DC021A8996D800BDAFC4 /* colors.h */,
+				B3EBBD911A8A421E0055FFA9 /* stdint.h */,
+				B3EBBD951A8A42F80055FFA9 /* elf.h */,
+				B3A52CC51A8A7E97005D59B3 /* stdio.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -150,6 +161,7 @@
 		B372FBC41A841C3900AA4A49 /* kernel */ = {
 			isa = PBXGroup;
 			children = (
+				B3EBBDA91A8A45280055FFA9 /* elf */,
 				B36A90381A84461200C2FA2F /* memory */,
 				B36A8E431A841E5600C2FA2F /* start.asm */,
 				B36A8E3D1A841E1300C2FA2F /* gdt.c */,
@@ -186,6 +198,22 @@
 				B3EE4C7B1A893D2400BAB01C /* vfs.c */,
 			);
 			path = vfs;
+			sourceTree = "<group>";
+		};
+		B3B2DA651A8987C900BDAFC4 /* kernel */ = {
+			isa = PBXGroup;
+			children = (
+				B3B2DA661A8987DE00BDAFC4 /* gdt.html */,
+			);
+			path = kernel;
+			sourceTree = "<group>";
+		};
+		B3EBBDA91A8A45280055FFA9 /* elf */ = {
+			isa = PBXGroup;
+			children = (
+				B3EBBDAA1A8A45430055FFA9 /* elf.c */,
+			);
+			path = elf;
 			sourceTree = "<group>";
 		};
 		B3EE4C7A1A893D0C00BAB01C /* filesystem */ = {

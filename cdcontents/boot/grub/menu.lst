@@ -1,0 +1,4 @@
+title   Yoda Pre-Alpha Kernel
+        root    (fd0)
+        kernel  /kernel.out
+        module (fd0)/initrd

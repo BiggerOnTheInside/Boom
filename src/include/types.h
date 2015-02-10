@@ -6,6 +6,7 @@
 
 #define insl(port, buffer, count) \
 __asm__ ("cld; rep; insl" :: "D" (buffer), "d" (port), "c" (count))
+#define NULL (void*) 0
 
 typedef int size_t;
 typedef unsigned int   u32int;

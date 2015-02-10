@@ -5,3 +5,4 @@ extern void init_video(void);
 extern void puts(unsigned char *text);
 extern void putch(unsigned char c);
 extern void clear();
+extern void printf(char* format, ...);

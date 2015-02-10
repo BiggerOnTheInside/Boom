@@ -188,7 +188,46 @@ void puts_hex(u32int n)
     {
         putch(tmp+'0');
     }
+}
 
+char *getHex(u32int n){
+    s32int tmp;
+    char *mes;
+    
+    strcat(mes, "0x");
+    
+    char noZeroes = 1;
+    
+    int i;
+    for (i = 28; i > 0; i -= 4)
+    {
+        tmp = (n >> i) & 0xF;
+        if (tmp == 0 && noZeroes != 0)
+        {
+            continue;
+        }
+        
+        if (tmp >= 0xA)
+        {
+            noZeroes = 0;
+            strcat(mes, tmp-0xA+'a');
+        }
+        else
+        {
+            noZeroes = 0;
+            strcat(mes, tmp+'0');
+        }
+    }
+    
+    tmp = n & 0xF;
+    if (tmp >= 0xA)
+    {
+        strcat(mes, tmp-0xA+'a');
+    }
+    else
+    {
+        strcat(mes, tmp+'0');
+    }
 }
 
 void puts_decimal(u32int n)
@@ -228,11 +267,48 @@ void settextcolor(unsigned char forecolor, unsigned char backcolor)
     /* Top 4 bytes are the background, bottom 4 bytes
     *  are the foreground color */
     attrib = (backcolor << 4) | (forecolor & 0x0F);
+    clear();
 }
 
 /* Sets our text-mode VGA pointer, then clears the screen for us */
 void init_video(void)
 {
     textmemptr = (unsigned short *)0xB8000;
-    clear();
+}
+
+void debug(char *message){
+    #ifdef DEBUG_MODE
+        putch('[');
+        puts(__FUNCTION__);
+        putch(']');
+        putch(' ');
+        puts(message);
+        putch('\n');
+    #endif
+}
+
+void debug_decimal(char *message, int d){
+    #ifdef DEBUG_MODE
+        putch('[');
+        puts(__FUNCTION__); 
+        putch(']');
+        putch(' ');
+        puts(message);
+        putch(' ');
+        puts_decimal(d);
+        putch('\n');
+    #endif
+}
+
+void debug_hex(char *message, u32int hex){
+    #ifdef DEBUG_MODE
+        putch('[');
+        puts(__FUNCTION__); 
+        putch(']');
+        putch(' ');
+        puts(message);
+        putch(' ');
+        puts_hex(hex);
+        putch('\n');
+    #endif
 }

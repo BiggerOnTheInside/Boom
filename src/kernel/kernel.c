@@ -6,8 +6,11 @@
 #include <system/multiboot.h>
 #include <system/filesystem/vfs/vfs.h>
 #include <system/filesystem/initrd/initrd.h>
+#include <colors.h>
+#include <elf.h>
 
 extern u32int end, placement_address;
+extern initrd_header_t *initrd_header;
 
 void kernel(struct multiboot *mboot_ptr)
 {
@@ -15,23 +18,49 @@ void kernel(struct multiboot *mboot_ptr)
     idt_install();
     isrs_install();
     irq_install();
-    // And this inside a function
-        
-    __asm__ __volatile__ ("sti");
-    
-    
-    ASSERT(mboot_ptr->mods_count > 0);
-    u32int initrd_location = *((u32int*)mboot_ptr->mods_addr);
-    u32int initrd_end = *(u32int*)(mboot_ptr->mods_addr+4);
-    // Don't trample our module with placement accesses, please!
-    placement_address = initrd_end;
-    
     initialise_paging();
     init_video();
     keyboard_install();
     timer_install();
+    
+    // And this inside a function
+        
+    __asm__ __volatile__ ("sti");
+    
+    settextcolor(WHITE, BLUE);
 
+    puts("Now starting 'Yoda' OS, Pre-Alpha 0.0.2. Copyright 2015 Walt Pach, all rights reserved.\n\n");
+    
+    PRINT("Setting up system boot information...");
+    
+    DEBUG("Checking multiboot header...");
+    ASSERT(mboot_ptr->mods_count > 0);
+    DEBUG("Multiboot header successfuly checked.");
+    
+    
+    DEBUG("Allocating memory for Initial Ramdisk location object...");
+    u32int initrd_location = malloc(sizeof(mboot_ptr->mods_addr));
+    DEBUG_HEX("Memory allocation successful. Location = ", initrd_location);
+    
+    DEBUG("Allocating memory for Initial Ramdisk end location object...");
+    u32int initrd_end = malloc(sizeof(mboot_ptr->mods_addr + 4));
+    DEBUG_HEX("Memory allocation successful. End location = ", initrd_end);
+
+    initrd_location = mboot_ptr->mods_addr;
+    DEBUG_HEX("Initial Ramdisk location (from multiboot) = ", initrd_location);
+    
+    initrd_end = mboot_ptr->mods_addr+4;
+    DEBUG_HEX("Initial Ramdisk end location (from algorithm) = ", initrd_end);
+    
+    // Don't trample our module with placement accesses, please!
+    placement_address = initrd_end;
+    DEBUG_HEX("Placement address = ", initrd_end);
+    
+    
+    
+    PRINT("Initialising filesystem root...");
     fs_root = initialise_initrd(initrd_location);
+    PRINT("Done initialising filesystem root.");
     
     int i = 0;
     struct dirent *node = 0;
@@ -58,5 +87,4 @@ void kernel(struct multiboot *mboot_ptr)
     }
     return;
 }
-
 
