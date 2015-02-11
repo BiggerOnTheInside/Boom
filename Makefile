@@ -17,7 +17,7 @@ C_COMPILER_FLAGS            = -w -O -fstrength-reduce -fomit-frame-pointer -finl
 ASSEMBLER_FLAGS             = -f elf -o
 S_ASSEMBER_FLAGS            = -c -o
 LINKER_FLAGS                = -T ./link.ld -o $(BINARY)
-BINARY                      = ./kernel.bin
+BINARY                      = ./kernel.out
 EMULATOR                    = qemu
 EMULATOR_FLAGS              = -kernel $(BINARY)
 
