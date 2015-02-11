@@ -8,7 +8,7 @@ ASM_OBJECT_FOLDER           = ./objects
 
 # Configuration Options
 C_COMPILER                  = i686-pc-elf-gcc
-ASSEMBLER                    = nasm
+ASSEMBLER                   = nasm
 S_ASSEMBER                  = i686-pc-elf-gcc
 LINKER                      = i686-pc-elf-ld
 
@@ -17,7 +17,7 @@ C_COMPILER_FLAGS            = -w -O -fstrength-reduce -fomit-frame-pointer -finl
 ASSEMBLER_FLAGS             = -f elf -o
 S_ASSEMBER_FLAGS            = -c -o
 LINKER_FLAGS                = -T ./link.ld -o $(BINARY)
-BINARY                      = ./kernel.out
+BINARY                      = ./kernel.bin
 EMULATOR                    = qemu
 EMULATOR_FLAGS              = -kernel $(BINARY)
 
