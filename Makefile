@@ -17,7 +17,7 @@ C_COMPILER_FLAGS            = -w -O -fstrength-reduce -fomit-frame-pointer -finl
 ASSEMBLER_FLAGS             = -f elf -o
 S_ASSEMBER_FLAGS            = -c -o
 LINKER_FLAGS                = -T ./link.ld -o $(BINARY)
-BINARY                      = ./kernel.out
+BINARY                      = ./kernel.elf
 EMULATOR                    = qemu
 EMULATOR_FLAGS              = -kernel $(BINARY)
 
@@ -112,7 +112,16 @@ run:
 	@echo "[Run] Emulator stopped."
 	
 	@echo "[Run] Finished running."
+
+image:
+	@./initrd_prog test.txt test.txt
+	-@mkdir -p iso/boot/grub
+	@cp grub.cfg iso/boot/grub
+	@cp kernel.bin iso/kernel.bin
+	@cp initrd iso/initrd
 	
+update:
+	@gcc -o initrd_prog initrd.c
 .c.o:
 	@echo "[Compiler] Compiling C source file."
 	@$(C_COMPILER) $(C_COMPILER_FLAGS) $@ $<

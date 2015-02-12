@@ -80,7 +80,7 @@ fs_node_t *initialise_initrd(u32int location){
     PRINT("Setting Initial Ramdisk header and file headers.");
     initrd_header = (initrd_header_t *)location;
     PRINT_HEX("Initrd header at location: ", initrd_header);
-    
+
     file_headers = (initrd_file_header_t *) (location + sizeof(initrd_header_t));
     PRINT_HEX("File headers at location: ", file_headers);
     
@@ -104,6 +104,7 @@ fs_node_t *initialise_initrd(u32int location){
 
     PRINT("Allocating memory for initrd_dev.");
     initrd_dev = (fs_node_t*)malloc(sizeof(fs_node_t));
+    PRINT_HEX("Memory allocated to: ", initrd_dev);
     
     PRINT("Setting name of initrd_dev.");
     strcpy(initrd_dev->name, "dev");
@@ -121,7 +122,12 @@ fs_node_t *initialise_initrd(u32int location){
     initrd_dev->impl = 0;
 
     PRINT("Allocating memory for root nodes.");
+    
+    
+    PRINT_DEC("Number of files: ", initrd_header->nfiles);
+    
     root_nodes = (fs_node_t*)malloc(sizeof(fs_node_t) * initrd_header->nfiles);
+    PRINT_HEX("Memory allocated to: ", initrd_dev);
     
     PRINT("Setting number of root nodes.");
     nroot_nodes = initrd_header->nfiles;

@@ -39,24 +39,24 @@ void kernel(struct multiboot *mboot_ptr)
     
     
     DEBUG("Allocating memory for Initial Ramdisk location object...");
-    u32int initrd_location = malloc(sizeof(mboot_ptr->mods_addr));
+    u32int initrd_location = mboot_ptr->mods_addr;//malloc(sizeof(mboot_ptr->mods_addr));
     DEBUG_HEX("Memory allocation successful. Location = ", initrd_location);
     
     DEBUG("Allocating memory for Initial Ramdisk end location object...");
-    u32int initrd_end = malloc(sizeof(mboot_ptr->mods_addr + 4));
+    u32int initrd_end = mboot_ptr->mods_addr+4;//malloc(sizeof(mboot_ptr->mods_addr + 4));
     DEBUG_HEX("Memory allocation successful. End location = ", initrd_end);
 
-    initrd_location = mboot_ptr->mods_addr;
+   // initrd_location = mboot_ptr->mods_addr;
     DEBUG_HEX("Initial Ramdisk location (from multiboot) = ", initrd_location);
     
-    initrd_end = mboot_ptr->mods_addr+4;
+    //initrd_end = mboot_ptr->mods_addr+4;
     DEBUG_HEX("Initial Ramdisk end location (from algorithm) = ", initrd_end);
     
     // Don't trample our module with placement accesses, please!
     placement_address = initrd_end;
     DEBUG_HEX("Placement address = ", initrd_end);
     
-    
+    //initialise_paging();
     
     PRINT("Initialising filesystem root...");
     fs_root = initialise_initrd(initrd_location);

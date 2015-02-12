@@ -46,7 +46,7 @@ int main(char argc, char **argv){
         headers[i].magic = 0xBF;
     }
     
-    FILE *wstream = fopen("./initrd.img", "w");
+    FILE *wstream = fopen("./initrd", "w");
     unsigned char *data = (unsigned char *)malloc(off);
     
     fwrite(&nheaders, sizeof(int), 1, wstream);
