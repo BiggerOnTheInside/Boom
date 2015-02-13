@@ -95,7 +95,7 @@ github:
 	@git commit -a -m "Updating Sources"
 	-@git remote remove origin
 	@git remote add origin https://github.com/BiggerOnTheInside/Boom.git
-	@git push origin master
+	@git push -f origin master
 	@echo "[GitHub] Done uploading."
 	
 run:
