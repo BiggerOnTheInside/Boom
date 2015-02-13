@@ -4,21 +4,21 @@
 #ifndef __SYSTEM_H
 #define __SYSTEM_H
 
-#include <colors.h>
+#include <system/colors.h>
 
-#define PRINT(message) putch('['); puts(__FUNCTION__); putch(']'); putch(' '); puts(message); putch('\n');
-#define PRINT_HEX(message, hex) putch('['); puts(__FUNCTION__); putch(']'); putch(' '); puts(message); puts_hex(hex); putch('\n');
-#define PRINT_DEC(message, dec) putch('['); puts(__FUNCTION__); putch(']'); putch(' '); puts(message); puts_decimal(dec); putch('\n');
-#define ERROR(message) clear(); puts("[ERROR - "); puts(__FUNCTION__); putch(']'); putch(' '); puts(message); putch('\n'); for(;;);
+#define PRINT(message) putch('['); puts("System"); putch(']'); putch(' '); puts(message); putch('\n');
+#define PRINT_HEX(message, hex) putch('['); puts("System"); putch(']'); putch(' '); puts(message); puts_hex(hex); putch('\n');
+#define PRINT_DEC(message, dec) putch('['); puts("System"); putch(']'); putch(' '); puts(message); puts_decimal(dec); putch('\n');
+#define ERROR(message) clear(); puts("[ERROR - "); puts("System"); putch(']'); putch(' '); puts(message); putch('\n'); for(;;);
 #define DEBUG(message) debug(message);
-#define DEBUG_HEX(message, hex) debug(message, hex);
-#define DEBUG_DEC(message, dec) debug(message, dec);
+#define DEBUG_HEX(message, hex) debug_hex(message, hex);
+#define DEBUG_DEC(message, dec) debug_decimal(message, dec);
 
 #define true 1
 #define false 0
 
-#include <types.h>
-#include <string.h>
+#include <system/types.h>
+#include <system/string.h>
 
 #include <system/irq.h>
 #include <system/isrs.h>

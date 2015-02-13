@@ -1,7 +1,7 @@
 /*************************************************************************/
 /* Copyright 2015 Bigger On The Inside Development, all rights reserved. */
 /*************************************************************************/
-#include <types.h>
+#include <system.h>
 
 /* These are own ISRs that point to our special IRQ handler
  *  instead of the regular 'fault_handler' function */

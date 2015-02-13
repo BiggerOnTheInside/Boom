@@ -2,8 +2,7 @@
 /* Copyright 2015 Bigger On The Inside Development, all rights reserved. */
 /*************************************************************************/
 
-#include <types.h>
-#include <string.h>
+#include <system.h>
 
 // Write len copies of val into dest.
 /*void memset(u8int *dest, u8int val, u32int len)

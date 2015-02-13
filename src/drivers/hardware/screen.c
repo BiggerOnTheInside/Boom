@@ -277,7 +277,7 @@ void init_video(void)
 }
 
 void debug(char *message){
-    #ifdef DEBUG_MODE
+    #if defined(DEBUG_MODE)
         putch('[');
         puts(__FUNCTION__);
         putch(']');
@@ -288,7 +288,7 @@ void debug(char *message){
 }
 
 void debug_decimal(char *message, int d){
-    #ifdef DEBUG_MODE
+    #if defined(DEBUG_MODE)
         putch('[');
         puts(__FUNCTION__); 
         putch(']');
@@ -301,7 +301,7 @@ void debug_decimal(char *message, int d){
 }
 
 void debug_hex(char *message, u32int hex){
-    #ifdef DEBUG_MODE
+    #if defined(DEBUG_MODE)
         putch('[');
         puts(__FUNCTION__); 
         putch(']');

@@ -7,8 +7,8 @@
  *
  */
 
-#ifndef __SYSTEM_STDINT_H
-    #define __SYSTEM_STDINT_H
+#ifndef __LIB_STDINT_H
+    #define __LIB_STDINT_H
     
     typedef int size_t;
     typedef unsigned int    u32int;

@@ -1,89 +1,312 @@
-/*************************************************************************/
-/* Copyright 2015 Bigger On The Inside Development, all rights reserved. */
-/*************************************************************************/
-
+/* This is part of Scorch OS, 
+ 
+ Copyright (c) 2008-11 ScorchOS Developers
+ All rights reserved.
+ 
+ Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+ 
+ * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+ * Neither the name of the ScorchOS developers nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+ 
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+ The term 'ScorchOS Developers' refers to the following people:
+ Bob Moss - Lead developer and Project Manager
+ Nicholas Sargente - Contributing developer
+ 
+ Additional credit to non-copyright holders:
+ 'Zach S' - initial project wiki site creation
+ */
 #include <system.h>
 
-/* KBDUS means US Keyboard Layout. This is a scancode table
-*  used to layout a standard US keyboard. I have left some
-*  comments in to give you an idea of what key is what, even
-*  though I set it's array index to 0. You can change that to
-*  whatever you want using a macro, if you wish! */
-unsigned char kbdus[128] =
-{
-    0,  27, '1', '2', '3', '4', '5', '6', '7', '8',	/* 9 */
-  '9', '0', '-', '=', '\b',	/* Backspace */
-  '\t',			/* Tab */
-  'q', 'w', 'e', 'r',	/* 19 */
-  't', 'y', 'u', 'i', 'o', 'p', '[', ']', '\n',		/* Enter key */
-    0,			/* 29   - Control */
-  'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';',	/* 39 */
- '\'', '`',   0,		/* Left shift */
- '\\', 'z', 'x', 'c', 'v', 'b', 'n',			/* 49 */
-  'm', ',', '.', '/',   0,					/* Right shift */
-  '*',
-    0,	/* Alt */
-  ' ',	/* Space bar */
-    0,	/* Caps lock */
-    0,	/* 59 - F1 key ... > */
-    0,   0,   0,   0,   0,   0,   0,   0,
-    0,	/* < ... F10 */
-    0,	/* 69 - Num lock*/
-    0,	/* Scroll Lock */
-    0,	/* Home key */
-    0,	/* Up Arrow */
-    0,	/* Page Up */
-  '-',
-    0,	/* Left Arrow */
-    0,
-    0,	/* Right Arrow */
-  '+',
-    0,	/* 79 - End key*/
-    0,	/* Down Arrow */
-    0,	/* Page Down */
-    0,	/* Insert Key */
-    0,	/* Delete Key */
-    0,   0,   0,
-    0,	/* F11 Key */
-    0,	/* F12 Key */
-    0,	/* All other keys are undefined */
+#ifndef __KB_H
+#define __KB_H
+
+#define ScrollLock (unsigned char)0x01
+#define NumLock (unsigned char)0x02
+#define CapsLock (unsigned char)0x04
+
+int kb_special(unsigned char key);
+void UpdateLeds(char led);
+void FlushBuffer();
+extern char getchar_int();
+extern int getchar();
+extern char *gets (char *s);
+extern void waitKey();
+
+#endif
+/// These are static Variables, They are the control lines of the keyboard;
+/// shift, caps, ctrl, ect.
+
+unsigned char shift = 0;            // Shift Key Status 
+unsigned char ctrl = 0;             // Ctrl Key Status
+unsigned char alt = 0;              // Alt Key Status 
+unsigned char caps = 0;             // Caps Lock Status
+unsigned char num = 0;              // Num Lock Status 
+unsigned char keyBuff[257];         // Keybuffer 
+volatile unsigned char keyBuffEnd = 0;  // The Last key in the buffer
+unsigned char asciiCode;            // The ASCII Code
+unsigned char leds = 0;             // The Three LED's on the keyboard.
+unsigned char echoON = 1;           // Echo keys
+unsigned char kbScanCodes[512] =    
+/// Keyboard character maps (Look-up table)
+{					
+	0, 27, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '\b',
+	'\t', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[' , ']', '\n', 0,
+	'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';', '\'', '`', 0,
+	'\\', 'z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '/', 0,
+	'*', 0, ' ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, '-', 0, 0, 0, '+', 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	/* Shifted */
+	0, 27, '!', '@', '#', '$', '%', '^', '&', '*', '(' , ')', '_' , '+', '\b',
+	'\t', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{' , '}', '\n', 0,
+	'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':', '\'', '~', 0,
+	'|', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<', '>', '?', 0,
+	'*', 0, ' ', 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, '7', '8', '9', 0, '4', '5', '6', 0,
+	'1', '2', '3', '0', 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	/* Caps, Normal */
+	0, 27, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '\b',
+	'\t', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{' , '}', '\n', 0,
+	'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':', '\'', '~', 0,
+	'|', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<', '>', '?', 0,
+	'*', 0, ' ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, '-', 0, 0, 0, '+', 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	/* Caps, Shifted */
+	0, 27, '!', '@', '#', '$', '%', '^', '&', '*', '(' , ')', '_' , '+', '\b',
+	'\t', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[' , ']', '\n', 0,
+	'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';', '\'', '`', 0,
+	'\\', 'z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '/', 0,
+	'*', 0, ' ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, '-', 0, 0, 0, '+', 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 };
 
-/* Handles the keyboard interrupt */
-void keyboard_handler(struct regs *r)
+void FlushBuffer()
+/// There is a hardware buffer for storing keypresses just incase you
+/// Wanted to use polling instead of interrupts, we have to clear this
+/// Before we set up the keyboard so random crap doesnt show up in the
+/// Software buffer
 {
-    unsigned char scancode;
-
-    /* Read from the keyboard's data buffer */
-    scancode = inportb(0x60);
-
-    /* If the top bit of the byte we read from the keyboard is
-    *  set, that means that a key has just been released */
-    if (scancode & 0x80)
-    {
-        /* You can use this one to see if the user released the
-        *  shift, alt, or control keys... */
-    }
-    else
-    {
-        /* Here, a key was just pressed. Please note that if you
-        *  hold a key down, you will get repeated key press
-        *  interrupts. */
-
-        /* Just to show you how this works, we simply translate
-        *  the keyboard scancode into an ASCII value, and then
-        *  display it to the screen. You can get creative and
-        *  use some flags to see if a shift is pressed and use a
-        *  different layout, or you can add another 128 entries
-        *  to the above layout to correspond to 'shift' being
-        *  held. If shift is held using the larger lookup table,
-        *  you would add 128 to the scancode when you look for it */
-        putch(kbdus[scancode]);
-    }
+	unsigned temp;
+	do
+	{
+		temp = inportb(0x64);
+		if((temp & 0x01) != 0) 
+		{
+			(void)inportb(0x60);
+			continue;
+		}
+	} while((temp & 0x02) != 0);
 }
 
-/* Installs the keyboard handler into IRQ1 */
-void keyboard_install()
+
+int kb_special(unsigned char key)
 {
-    irq_install_handler(1, keyboard_handler);
+	static int specKeyUp = 1;	// Is a key already been or being pressed?
+	switch(key) 
+	{
+		case 0x36: // R-Shift down
+		case 0x2A: // L-Shift down
+			shift = 1;
+			break;
+		case 0xB6: // R-Shift up
+		case 0xAA: // L-Shift up
+			shift = 0;
+			break;
+		case 0x1D: // Control down
+			ctrl = 1;
+			break;
+		case 0x9D: // Control up
+			ctrl = 0;
+			break;
+		case 0x38: // Alt down
+			alt = 1;
+			break;
+		case 0xB8: // Alt up
+			alt = 0;
+			break;
+		case 0x3A: // Caps down
+			if(specKeyUp == 1) 
+			{
+				caps = !caps;
+				UpdateLeds(CapsLock);
+				specKeyUp = 0;
+			}
+			break;
+		case 0x45: // Num down
+			if(specKeyUp == 1)
+			{
+				num = !num;
+				UpdateLeds(NumLock);
+				specKeyUp = 0;
+			}
+			break;
+		case 0x46: // Scroll down
+			if(specKeyUp == 1)
+			{
+				num = !num;
+				UpdateLeds(ScrollLock);
+				specKeyUp = 0;
+			}
+			break;
+		case 0xBA: // Caps Up
+		case 0xC5: // Num Up
+		case 0xC6: // Scroll Up
+			specKeyUp = 1;
+			break;
+		case 0xE0:
+			break;
+		default:
+			return(0);
+	}
+	return (1);
+}
+
+
+void keyboard_handler(struct regs *r)
+/// Get keyboard input during the keyboard interrupt
+/// Convert the scancode into ascii data.
+{
+	unsigned char scanCode;
+	scanCode = inportb(0x60);
+	unsigned char asciiCode;
+	
+	
+	if(!(kb_special(scanCode) | (scanCode >= 0x80)))
+	{
+		if(shift)		//Determine key that has been pressed
+		{
+			if(!caps)
+			{
+				asciiCode = kbScanCodes[scanCode + 128];
+			}
+			else
+			{
+				asciiCode = kbScanCodes[scanCode + 384];
+			}
+		}
+		else
+		{
+			if(!caps)
+			{
+				asciiCode = kbScanCodes[scanCode];
+			}
+			else
+			{
+				asciiCode = kbScanCodes[scanCode + 256];
+			}
+		}
+		keyBuffEnd++;
+		keyBuff[keyBuffEnd] = asciiCode;
+		if (echoON){
+			putch((int)keyBuff[keyBuffEnd]);
+		}
+	}
+}
+
+void keyboard_install()
+/// Install the Keyboard handler into the IDT
+{
+    FlushBuffer();                      // Anything in the buffer is crap
+	irq_install_handler(1, &keyboard_handler);  // Install Handler
+}
+
+void waitKey()
+/// Wait for a keypress on the keyboard
+{
+	FlushBuffer();  // Empty the Buffer of erratic data
+	while (getchar() == 0);
+}
+
+char *gets(char *s) 
+/// Get a String from stdin (keyboard)
+{
+	int i;
+	char k = (char)getchar();
+	if (k == 0)
+		return 0;
+	for (i = 0; k != 0 && k != '\n'; i++)
+	{
+		if (k == '\b')
+		{
+			i--;
+			s[i] = 0;
+			i--;
+			k = (char)getchar();
+			if(k == 0)
+				return 0;
+		}
+		else
+		{
+			s[i] = k;
+			k = (char)getchar();
+			if(k == 0)
+				return 0;
+		}
+	}
+	s[i] = '\0';
+	return s;
+}
+char getchar_int()
+/// Get a charecter from the stdin
+{
+	int i = 0;
+	while(keyBuffEnd == 0);
+	asm("cli");
+    
+	for(; i < keyBuffEnd; i++)
+	{
+		keyBuff[i] = keyBuff[i + 1];
+	}
+	keyBuffEnd--;
+    
+	asm("sti");
+    
+	return keyBuff[0];
+}
+int getchar()
+/// Get a charecter from the stdin (ANSI compliant)
+{
+	return ((int) getchar_int());
+}
+
+void UpdateLeds(char led)
+/// Keyboards have LED's for locks, update them so they match what the
+/// States of the keyboard are.
+{
+	if(led == 0)
+	{
+		leds = 0;
+	}
+	else
+	{
+        if (leds == (leds|led))	        // If led is already on
+		{
+			leds = leds^led;	    // We turn the led off
+		}
+		else
+		{
+			leds = leds | led;	    // Else, turn led on
+		}
+}
+	while((inportb(0x64) &2) !=0);  // Loop until zero
+	outportb(0x60, 0xED);
+	while((inportb(0x64) &2) !=0 ); // Loop until zero
+	outportb(0x60, leds);			// Update led status register
 }
