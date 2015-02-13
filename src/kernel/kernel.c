@@ -39,11 +39,11 @@ void kernel(struct multiboot *mboot_ptr)
     
     
     DEBUG("Allocating memory for Initial Ramdisk location object...");
-    u32int initrd_location = mboot_ptr->mods_addr;//malloc(sizeof(mboot_ptr->mods_addr));
+    u32int initrd_location = malloc(sizeof(mboot_ptr->mods_addr));   //mboot_ptr->mods_addr;//malloc(sizeof(mboot_ptr->mods_addr));
     DEBUG_HEX("Memory allocation successful. Location = ", initrd_location);
     
     DEBUG("Allocating memory for Initial Ramdisk end location object...");
-    u32int initrd_end = mboot_ptr->mods_addr+4;//malloc(sizeof(mboot_ptr->mods_addr + 4));
+    u32int initrd_end = malloc(sizeof(mboot_ptr->mods_addr + 4));
     DEBUG_HEX("Memory allocation successful. End location = ", initrd_end);
 
    // initrd_location = mboot_ptr->mods_addr;
