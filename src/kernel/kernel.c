@@ -7,10 +7,16 @@
 #include <system/filesystem/vfs/vfs.h>
 #include <system/filesystem/initrd/initrd.h>
 
-
+/* These are 'imported' so we can alter them when setting up the initrd.     *
+ * Basically, the first is the end of the kernel, and the placement_address  *
+ * Is the location when paging begins.                                       *
+ * The initrd_header pointer is just so we can read data.                    */
 extern u32int end, placement_address;
 extern initrd_header_t *initrd_header;
 
+/* This is the main kernel function, which is called by the ASM start file.  *
+ * @param mboot_ptr The multiboot header passed by our function in start.asm *
+ * @see   start.asm                                                          */
 void kernel(struct multiboot *mboot_ptr)
 {
     gdt_install();
@@ -32,31 +38,31 @@ void kernel(struct multiboot *mboot_ptr)
     
     PRINT("Starting systems...");
     
-    PRINT("Checking multiboot header.");
+    DEBUG("Checking multiboot header.");
     ASSERT(mboot_ptr->mods_count > 0);
     
     
-    PRINT("Allocating memory for Initial Ramdisk location object...");
-    u32int initrd_location = malloc(sizeof(mboot_ptr->mods_addr));   //mboot_ptr->mods_addr;//malloc(sizeof(mboot_ptr->mods_addr));
+    DEBUG("Allocating memory for Initial Ramdisk location object...");
+    u32int initrd_location = malloc(mboot_ptr->mods_addr);   //mboot_ptr->mods_addr;//malloc(sizeof(mboot_ptr->mods_addr));
                                                                      //PRINT_HEX("Memory allocation successful. Location = ", initrd_location);
     
     PRINT("Allocating memory for Initial Ramdisk end location object...");
-    u32int initrd_end = malloc(sizeof(mboot_ptr->mods_addr + 4));
-    //PRINT_HEX("Memory allocation successful. End location = ", initrd_end);
+    u32int initrd_end = malloc(mboot_ptr->mods_addr + 4);
+    DEBUG_HEX("Memory allocation successful. End location = ", initrd_end);
     
-   //PRINT_HEX("Initial Ramdisk location (from multiboot) = ", initrd_location);
+    DEBUG_HEX("Initial Ramdisk location (from multiboot) = ", initrd_location);
     
-    // PRINT_HEX("Initial Ramdisk end location (from algorithm) = ", initrd_end);
+    DEBUG_HEX("Initial Ramdisk end location (from algorithm) = ", initrd_end);
     
     // Don't trample our module with placement accesses, please!
     placement_address = initrd_end;
-    PRINT_HEX("Placement address = ", initrd_end);
+    DEBUG_HEX("Placement address = ", initrd_end);
     
     //initialise_paging();
     
-    PRINT("Initialising filesystem root...");
+    DEBUG("Initialising filesystem root...");
     fs_root = initialise_initrd(initrd_end);
-    PRINT("Done initialising filesystem root.");
+    DEBUG("Done initialising filesystem root.");
     PRINT("System done setting up!");
     
     int i = 0;
