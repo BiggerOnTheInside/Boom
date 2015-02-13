@@ -10,9 +10,16 @@
 #define PRINT_HEX(message, hex) putch('['); puts("System"); putch(']'); putch(' '); puts(message); puts_hex(hex); putch('\n');
 #define PRINT_DEC(message, dec) putch('['); puts("System"); putch(']'); putch(' '); puts(message); puts_decimal(dec); putch('\n');
 #define ERROR(message) clear(); puts("[ERROR - "); puts("System"); putch(']'); putch(' '); puts(message); putch('\n'); for(;;);
-#define DEBUG(message) debug(message);
-#define DEBUG_HEX(message, hex) debug_hex(message, hex);
-#define DEBUG_DEC(message, dec) debug_decimal(message, dec);
+
+#ifndef DEBUG_MODE
+    #define DEBUG(message) 0;
+    #define DEBUG_HEX(message, hex) 0;
+    #define DEBUG_DEC(message, dec) 0;
+#else
+    #define DEBUG(message) debug(message);
+    #define DEBUG_HEX(message, hex) debug_hex(message, hex);
+    #define DEBUG_DEC(message, dec) debug_decimal(message, dec);
+#endif
 
 #define true 1
 #define false 0

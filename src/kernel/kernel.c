@@ -50,13 +50,13 @@ void kernel(struct multiboot *mboot_ptr)
     
     // Don't trample our module with placement accesses, please!
     placement_address = initrd_end;
-    //PRINT_HEX("Placement address = ", initrd_end);
+    PRINT_HEX("Placement address = ", initrd_end);
     
     //initialise_paging();
     
     PRINT("Initialising filesystem root...");
     fs_root = initialise_initrd(initrd_end);
-    //PRINT("Done initialising filesystem root.");
+    PRINT("Done initialising filesystem root.");
     PRINT("System done setting up!");
     
     int i = 0;
