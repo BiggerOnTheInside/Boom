@@ -64,6 +64,8 @@ void kernel(struct multiboot *mboot_ptr)
     
     int i = 0;
     struct dirent *node = 0;
+
+    
     while ( (node = readdir_fs(fs_root, i)) != 0)
     {
         puts("Found file ");
@@ -85,6 +87,7 @@ void kernel(struct multiboot *mboot_ptr)
         }
         i++;
     }
+
     return;
 }
 
