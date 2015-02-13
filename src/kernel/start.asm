@@ -513,7 +513,11 @@ irq_common_stub:
     add esp, 8
     iret
 
+global getCR2
 
+getCR2:
+    mov eax, cr2
+    ret
     
 ; Here is the definition of our BSS section. Right now, we'll use
 ; it just to store the stack. Remember that a stack actually grows

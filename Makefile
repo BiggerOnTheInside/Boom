@@ -117,7 +117,7 @@ image:
 	@./initrd_prog test.txt test.txt
 	-@mkdir -p iso/boot/grub
 	@cp grub.cfg iso/boot/grub
-	@cp kernel.bin iso/kernel.bin
+	@cp $(BINARY) iso/kernel.bin
 	@cp initrd iso/initrd
 	
 update:
