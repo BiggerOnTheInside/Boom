@@ -216,10 +216,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B3B709C91A8EC1ED00700F0E</string>
+						<string>B38F9BC81A8EC2E2003DCB31</string>
 						<key>history</key>
 						<array>
-							<string>B3B709B11A8E9D2700700F0E</string>
+							<string>B3B709C91A8EC1ED00700F0E</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -256,10 +256,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B3B709CA1A8EC1ED00700F0E</string>
+						<string>B38F9BC91A8EC2E2003DCB31</string>
 						<key>history</key>
 						<array>
-							<string>B3B7089F1A8D844200700F0E</string>
+							<string>B3B709CA1A8EC1ED00700F0E</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -275,7 +275,7 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>322 92 1280 686 0 0 1280 778 </string>
+				<string>0 92 1280 686 0 0 1280 778 </string>
 			</dict>
 		</dict>
 		<dict>
@@ -296,10 +296,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B3B709CB1A8EC1ED00700F0E</string>
+						<string>B38F9BCA1A8EC2E2003DCB31</string>
 						<key>history</key>
 						<array>
-							<string>B3B7088E1A8D820F00700F0E</string>
+							<string>B3B709CB1A8EC1ED00700F0E</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -336,10 +336,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B3B709CC1A8EC1ED00700F0E</string>
+						<string>B38F9BCB1A8EC2E2003DCB31</string>
 						<key>history</key>
 						<array>
-							<string>B32EBE271A8CF522003AE6E1</string>
+							<string>B3B709CC1A8EC1ED00700F0E</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -485,7 +485,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>B3B709C81A8EC1ED00700F0E</string>
+										<string>B38F9BC51A8EC2E2003DCB31</string>
 										<key>history</key>
 										<array>
 											<string>B36A915E1A844E2400C2FA2F</string>
@@ -537,7 +537,7 @@
 											<string>B3B7096E1A8E99B600700F0E</string>
 											<string>B3B7096F1A8E99B600700F0E</string>
 											<string>B3B709A81A8E9AE900700F0E</string>
-											<string>B3B709A91A8E9AE900700F0E</string>
+											<string>B3B709C81A8EC1ED00700F0E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -549,14 +549,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1072, 321}}</string>
+								<string>{{0, 0}, {1072, 312}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 147 1280 631 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>321pt</string>
+							<string>312pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -569,14 +569,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 326}, {1072, 264}}</string>
+								<string>{{0, 317}, {1072, 273}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 147 1280 631 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>264pt</string>
+							<string>273pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -595,9 +595,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>B3B708831A8D803300700F0E</string>
+				<string>B38F9BC61A8EC2E2003DCB31</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>B3B708841A8D803300700F0E</string>
+				<string>B38F9BC71A8EC2E2003DCB31</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -735,7 +735,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>B38F62001A8C5477008AB619</string>
 		<string>B3B708A11A8D844200700F0E</string>
 		<string>B3B7089D1A8D844200700F0E</string>
