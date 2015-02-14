@@ -123,7 +123,6 @@ fs_node_t *initialise_initrd(u32int location){
 
     PRINT("Allocating memory for root nodes.");
     
-    
     PRINT_DEC("Number of files: ", initrd_header->nfiles);
     
     root_nodes = (fs_node_t*)malloc(sizeof(fs_node_t) * initrd_header->nfiles);

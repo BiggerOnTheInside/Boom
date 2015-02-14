@@ -2,6 +2,7 @@
 /* Copyright 2015 Bigger On The Inside Development, all rights reserved. */
 /*************************************************************************/
 
+#define DEBUG_MODE
 #include <system.h>
 #include <system/multiboot.h>
 #include <system/filesystem/vfs/vfs.h>
@@ -42,13 +43,15 @@ void kernel(struct multiboot *mboot_ptr)
     ASSERT(mboot_ptr->mods_count > 0);
     
     
-    DEBUG("Allocating memory for Initial Ramdisk location object...");
-    u32int initrd_location = mboot_ptr->mods_addr;   //mboot_ptr->mods_addr;//malloc(sizeof(mboot_ptr->mods_addr));
-                                                                     //PRINT_HEX("Memory allocation successful. Location = ", initrd_location);
+    PRINT("Allocating memory for Initial Ramdisk location object...");
+    u32int initrd_location = ((u32int*)mboot_ptr->mods_addr);   //mboot_ptr->mods_addr;//malloc(sizeof(mboot_ptr->mods_addr));
+    PRINT_HEX("Memory allocation successful. Location = ", initrd_location);
     
     PRINT("Allocating memory for Initial Ramdisk end location object...");
-    u32int initrd_end = malloc(4);
-    DEBUG_HEX("Memory allocation successful. End location = ", initrd_end);
+    
+    u32int initrd_end = (u32int*)(mboot_ptr->mods_addr+4);
+    PRINT_HEX("Memory allocated to: ", initrd_end);
+    //DEBUG_HEX("Memory allocation successful. End location = ", initrd_end);
     
     DEBUG_HEX("Initial Ramdisk location (from multiboot) = ", initrd_location);
     
